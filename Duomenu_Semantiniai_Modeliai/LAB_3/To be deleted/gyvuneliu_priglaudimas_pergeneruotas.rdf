@@ -1,0 +1,1764 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:db="http://localhost:2020/resource/"
+     xmlns:map="http://localhost:2020/resource/#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vocab="http://localhost:2020/resource/vocab/">
+    <Ontology rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2">
+        <imports rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2"/>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_APRASYMAS_fk_GYVUNASid_GYVUNAS -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_APRASYMAS_fk_GYVUNASid_GYVUNAS"/>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_APRASYMAS_id_APRASYMAS -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_APRASYMAS_id_APRASYMAS">
+        <rdfs:label>APRASYMAS id_APRASYMAS</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_APRASYMAS_tekstas -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_APRASYMAS_tekstas">
+        <rdfs:label>APRASYMAS tekstas</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_ASMENS_PATIKRINIMAS_aprasymas -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_ASMENS_PATIKRINIMAS_aprasymas">
+        <rdfs:label>ASMENS_PATIKRINIMAS aprasymas</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_ASMENS_PATIKRINIMAS_data -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_ASMENS_PATIKRINIMAS_data">
+        <rdfs:label>ASMENS_PATIKRINIMAS data</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_ASMENS_PATIKRINIMAS_fk_ASMUOid_NAUDOTOJAS -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_ASMENS_PATIKRINIMAS_fk_ASMUOid_NAUDOTOJAS"/>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_ASMENS_PATIKRINIMAS_fk_PRIEGLAUDAid_NAUDOTOJAS -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_ASMENS_PATIKRINIMAS_fk_PRIEGLAUDAid_NAUDOTOJAS"/>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_ASMENS_PATIKRINIMAS_id_ASMENS_PATIKRINIMAS -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_ASMENS_PATIKRINIMAS_id_ASMENS_PATIKRINIMAS">
+        <rdfs:label>ASMENS_PATIKRINIMAS id_ASMENS_PATIKRINIMAS</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_ASMENS_PATIKRINIMAS_tinkamumas -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_ASMENS_PATIKRINIMAS_tinkamumas">
+        <rdfs:label>ASMENS_PATIKRINIMAS tinkamumas</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_ASMUO_asmens_kodas -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_ASMUO_asmens_kodas">
+        <rdfs:label>ASMUO asmens_kodas</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_ASMUO_gimimo_data -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_ASMUO_gimimo_data">
+        <rdfs:label>ASMUO gimimo_data</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_ASMUO_id_NAUDOTOJAS -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_ASMUO_id_NAUDOTOJAS"/>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_ASMUO_pavarde -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_ASMUO_pavarde">
+        <rdfs:label>ASMUO pavarde</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_ASMUO_vardas -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_ASMUO_vardas">
+        <rdfs:label>ASMUO vardas</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_DOKUMENTAS_dokumento_tipas -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_DOKUMENTAS_dokumento_tipas">
+        <rdfs:label>DOKUMENTAS dokumento_tipas</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_DOKUMENTAS_fk_ASMUOid_NAUDOTOJAS -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_DOKUMENTAS_fk_ASMUOid_NAUDOTOJAS"/>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_DOKUMENTAS_fk_GYVUNASid_GYVUNAS -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_DOKUMENTAS_fk_GYVUNASid_GYVUNAS"/>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_DOKUMENTAS_fk_PRIEGLAUDAid_NAUDOTOJAS -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_DOKUMENTAS_fk_PRIEGLAUDAid_NAUDOTOJAS"/>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_DOKUMENTAS_id_DOKUMENTAS -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_DOKUMENTAS_id_DOKUMENTAS">
+        <rdfs:label>DOKUMENTAS id_DOKUMENTAS</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_DOKUMENTAS_sukurimo_data -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_DOKUMENTAS_sukurimo_data">
+        <rdfs:label>DOKUMENTAS sukurimo_data</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_DOKUMENTAS_tekstas -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_DOKUMENTAS_tekstas">
+        <rdfs:label>DOKUMENTAS tekstas</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_GRAZINIMAS_grazinimo_data -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_GRAZINIMAS_grazinimo_data">
+        <rdfs:label>GRAZINIMAS grazinimo_data</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_GRAZINIMAS_id_DOKUMENTAS -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_GRAZINIMAS_id_DOKUMENTAS"/>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_GYVUNAS_fk_PRIEGLAUDAid_NAUDOTOJAS -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_GYVUNAS_fk_PRIEGLAUDAid_NAUDOTOJAS"/>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_GYVUNAS_gimimo_data -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_GYVUNAS_gimimo_data">
+        <rdfs:label>GYVUNAS gimimo_data</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_GYVUNAS_gyvno_dydzio_kategorija -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_GYVUNAS_gyvno_dydzio_kategorija">
+        <rdfs:label>GYVUNAS gyvno_dydzio_kategorija</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_GYVUNAS_id_GYVUNAS -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_GYVUNAS_id_GYVUNAS">
+        <rdfs:label>GYVUNAS id_GYVUNAS</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_GYVUNAS_rusis -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_GYVUNAS_rusis">
+        <rdfs:label>GYVUNAS rusis</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_GYVUNAS_vardas -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_GYVUNAS_vardas">
+        <rdfs:label>GYVUNAS vardas</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_GYVUNAS_veisle -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_GYVUNAS_veisle">
+        <rdfs:label>GYVUNAS veisle</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_NAUDOTOJAS_adresas -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_NAUDOTOJAS_adresas">
+        <rdfs:label>NAUDOTOJAS adresas</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_NAUDOTOJAS_elektroninis_pastas -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_NAUDOTOJAS_elektroninis_pastas">
+        <rdfs:label>NAUDOTOJAS elektroninis_pastas</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_NAUDOTOJAS_id_NAUDOTOJAS -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_NAUDOTOJAS_id_NAUDOTOJAS">
+        <rdfs:label>NAUDOTOJAS id_NAUDOTOJAS</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_NAUDOTOJAS_naudotojo_tipas -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_NAUDOTOJAS_naudotojo_tipas">
+        <rdfs:label>NAUDOTOJAS naudotojo_tipas</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_NAUDOTOJAS_registracijos_data -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_NAUDOTOJAS_registracijos_data">
+        <rdfs:label>NAUDOTOJAS registracijos_data</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_NAUDOTOJAS_telefono_numeris -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_NAUDOTOJAS_telefono_numeris">
+        <rdfs:label>NAUDOTOJAS telefono_numeris</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_PRASYMAS_busena -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_PRASYMAS_busena">
+        <rdfs:label>PRASYMAS busena</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_PRASYMAS_id_DOKUMENTAS -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_PRASYMAS_id_DOKUMENTAS"/>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_PRIEGLAUDA_id_NAUDOTOJAS -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_PRIEGLAUDA_id_NAUDOTOJAS"/>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_PRIEGLAUDA_imones_kodas -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_PRIEGLAUDA_imones_kodas">
+        <rdfs:label>PRIEGLAUDA imones_kodas</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_PRIEGLAUDA_pavadinimas -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_PRIEGLAUDA_pavadinimas">
+        <rdfs:label>PRIEGLAUDA pavadinimas</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_SUSITIKIMAS_fk_ASMUOid_NAUDOTOJAS -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_SUSITIKIMAS_fk_ASMUOid_NAUDOTOJAS"/>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_SUSITIKIMAS_fk_GYVUNASid_GYVUNAS -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_SUSITIKIMAS_fk_GYVUNASid_GYVUNAS">
+        <rdfs:label>SUSITIKIMAS fk_GYVUNASid_GYVUNAS</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_SUSITIKIMAS_fk_PRIEGLAUDAid_NAUDOTOJAS -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_SUSITIKIMAS_fk_PRIEGLAUDAid_NAUDOTOJAS"/>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_SUSITIKIMAS_id_SUSITIKIMAS -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_SUSITIKIMAS_id_SUSITIKIMAS">
+        <rdfs:label>SUSITIKIMAS id_SUSITIKIMAS</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_SUSITIKIMAS_sukurimo_data -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_SUSITIKIMAS_sukurimo_data">
+        <rdfs:label>SUSITIKIMAS sukurimo_data</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_SUSITIKIMAS_susitikimo_data -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_SUSITIKIMAS_susitikimo_data">
+        <rdfs:label>SUSITIKIMAS susitikimo_data</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_SUTARTIS_busena -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_SUTARTIS_busena">
+        <rdfs:label>SUTARTIS busena</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_SUTARTIS_id_DOKUMENTAS -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_SUTARTIS_id_DOKUMENTAS"/>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_SUTARTIS_pasirasymo_data -->
+
+    <AnnotationProperty rdf:about="http://localhost:2020/resource/vocab/dbo_SUTARTIS_pasirasymo_data">
+        <rdfs:label>SUTARTIS pasirasymo_data</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_APRASYMAS -->
+
+    <Class rdf:about="http://localhost:2020/resource/vocab/dbo_APRASYMAS">
+        <rdfs:label>dbo.APRASYMAS</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_ASMENS_PATIKRINIMAS -->
+
+    <Class rdf:about="http://localhost:2020/resource/vocab/dbo_ASMENS_PATIKRINIMAS">
+        <rdfs:label>dbo.ASMENS_PATIKRINIMAS</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_ASMUO -->
+
+    <Class rdf:about="http://localhost:2020/resource/vocab/dbo_ASMUO">
+        <rdfs:label>dbo.ASMUO</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_DOKUMENTAS -->
+
+    <Class rdf:about="http://localhost:2020/resource/vocab/dbo_DOKUMENTAS">
+        <rdfs:label>dbo.DOKUMENTAS</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_GRAZINIMAS -->
+
+    <Class rdf:about="http://localhost:2020/resource/vocab/dbo_GRAZINIMAS">
+        <rdfs:label>dbo.GRAZINIMAS</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_GYVUNAS -->
+
+    <Class rdf:about="http://localhost:2020/resource/vocab/dbo_GYVUNAS">
+        <rdfs:label>dbo.GYVUNAS</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_NAUDOTOJAS -->
+
+    <Class rdf:about="http://localhost:2020/resource/vocab/dbo_NAUDOTOJAS">
+        <rdfs:label>dbo.NAUDOTOJAS</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_PRASYMAS -->
+
+    <Class rdf:about="http://localhost:2020/resource/vocab/dbo_PRASYMAS">
+        <rdfs:label>dbo.PRASYMAS</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_PRIEGLAUDA -->
+
+    <Class rdf:about="http://localhost:2020/resource/vocab/dbo_PRIEGLAUDA">
+        <rdfs:label>dbo.PRIEGLAUDA</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_SUSITIKIMAS -->
+
+    <Class rdf:about="http://localhost:2020/resource/vocab/dbo_SUSITIKIMAS">
+        <rdfs:label>dbo.SUSITIKIMAS</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://localhost:2020/resource/vocab/dbo_SUTARTIS -->
+
+    <Class rdf:about="http://localhost:2020/resource/vocab/dbo_SUTARTIS">
+        <rdfs:label>dbo.SUTARTIS</rdfs:label>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/1 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/1">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_APRASYMAS"/>
+        <vocab:dbo_APRASYMAS_fk_GYVUNASid_GYVUNAS rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/1"/>
+        <vocab:dbo_APRASYMAS_id_APRASYMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</vocab:dbo_APRASYMAS_id_APRASYMAS>
+        <vocab:dbo_APRASYMAS_tekstas>Labai saugantis suniukas ieskantis namu.</vocab:dbo_APRASYMAS_tekstas>
+        <rdfs:label>APRASYMAS #1</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/10 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/10">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_APRASYMAS"/>
+        <vocab:dbo_APRASYMAS_fk_GYVUNASid_GYVUNAS rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/10"/>
+        <vocab:dbo_APRASYMAS_id_APRASYMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</vocab:dbo_APRASYMAS_id_APRASYMAS>
+        <vocab:dbo_APRASYMAS_tekstas>Ieskomi namai viska valganciam driezui.</vocab:dbo_APRASYMAS_tekstas>
+        <rdfs:label>APRASYMAS #10</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/11 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/11">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_APRASYMAS"/>
+        <vocab:dbo_APRASYMAS_fk_GYVUNASid_GYVUNAS rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/11"/>
+        <vocab:dbo_APRASYMAS_id_APRASYMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</vocab:dbo_APRASYMAS_id_APRASYMAS>
+        <vocab:dbo_APRASYMAS_tekstas>Mazasis ziurkenas iesko kitos vietos savo narveliui.</vocab:dbo_APRASYMAS_tekstas>
+        <rdfs:label>APRASYMAS #11</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/12 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/12">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_APRASYMAS"/>
+        <vocab:dbo_APRASYMAS_fk_GYVUNASid_GYVUNAS rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/12"/>
+        <vocab:dbo_APRASYMAS_id_APRASYMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</vocab:dbo_APRASYMAS_id_APRASYMAS>
+        <vocab:dbo_APRASYMAS_tekstas>Muses valganti draugiska varle iesko varliagyvius megstanciu zmoniu.</vocab:dbo_APRASYMAS_tekstas>
+        <rdfs:label>APRASYMAS #12</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/13 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/13">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_APRASYMAS"/>
+        <vocab:dbo_APRASYMAS_fk_GYVUNASid_GYVUNAS rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/13"/>
+        <vocab:dbo_APRASYMAS_id_APRASYMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</vocab:dbo_APRASYMAS_id_APRASYMAS>
+        <vocab:dbo_APRASYMAS_tekstas>Nulepause miela katyte iesko siltu namu.</vocab:dbo_APRASYMAS_tekstas>
+        <rdfs:label>APRASYMAS #13</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/14 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/14">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_APRASYMAS"/>
+        <vocab:dbo_APRASYMAS_fk_GYVUNASid_GYVUNAS rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/14"/>
+        <vocab:dbo_APRASYMAS_id_APRASYMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</vocab:dbo_APRASYMAS_id_APRASYMAS>
+        <vocab:dbo_APRASYMAS_tekstas>Isdidinga ir charakteri turinti medziotoja iesko supratingo seimininko.</vocab:dbo_APRASYMAS_tekstas>
+        <rdfs:label>APRASYMAS #14</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/15 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/15">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_APRASYMAS"/>
+        <vocab:dbo_APRASYMAS_fk_GYVUNASid_GYVUNAS rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/15"/>
+        <vocab:dbo_APRASYMAS_id_APRASYMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</vocab:dbo_APRASYMAS_id_APRASYMAS>
+        <vocab:dbo_APRASYMAS_tekstas>Mazoji kaledu senelio padejeja iesko namu.</vocab:dbo_APRASYMAS_tekstas>
+        <rdfs:label>APRASYMAS #15</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/2 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/2">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_APRASYMAS"/>
+        <vocab:dbo_APRASYMAS_fk_GYVUNASid_GYVUNAS rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/2"/>
+        <vocab:dbo_APRASYMAS_id_APRASYMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</vocab:dbo_APRASYMAS_id_APRASYMAS>
+        <vocab:dbo_APRASYMAS_tekstas>Griezto charakterio suniukas iesko seimininko.</vocab:dbo_APRASYMAS_tekstas>
+        <rdfs:label>APRASYMAS #2</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/3 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/3">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_APRASYMAS"/>
+        <vocab:dbo_APRASYMAS_fk_GYVUNASid_GYVUNAS rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/3"/>
+        <vocab:dbo_APRASYMAS_id_APRASYMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</vocab:dbo_APRASYMAS_id_APRASYMAS>
+        <vocab:dbo_APRASYMAS_tekstas>Labai draugiskas ir svelnus buldogas iesko siltu namu.</vocab:dbo_APRASYMAS_tekstas>
+        <rdfs:label>APRASYMAS #3</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/4 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/4">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_APRASYMAS"/>
+        <vocab:dbo_APRASYMAS_fk_GYVUNASid_GYVUNAS rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/4"/>
+        <vocab:dbo_APRASYMAS_id_APRASYMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</vocab:dbo_APRASYMAS_id_APRASYMAS>
+        <vocab:dbo_APRASYMAS_tekstas>Draugiskas ir meilus suniukas iesko mylincios seimos.</vocab:dbo_APRASYMAS_tekstas>
+        <rdfs:label>APRASYMAS #4</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/5 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/5">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_APRASYMAS"/>
+        <vocab:dbo_APRASYMAS_fk_GYVUNASid_GYVUNAS rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/5"/>
+        <vocab:dbo_APRASYMAS_id_APRASYMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</vocab:dbo_APRASYMAS_id_APRASYMAS>
+        <vocab:dbo_APRASYMAS_tekstas>Mazasis padukelis su daug energijos iesko seimininko.</vocab:dbo_APRASYMAS_tekstas>
+        <rdfs:label>APRASYMAS #5</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/6 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/6">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_APRASYMAS"/>
+        <vocab:dbo_APRASYMAS_fk_GYVUNASid_GYVUNAS rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/6"/>
+        <vocab:dbo_APRASYMAS_id_APRASYMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</vocab:dbo_APRASYMAS_id_APRASYMAS>
+        <vocab:dbo_APRASYMAS_tekstas>Draugiskas giesmininkas iesko nauju namu.</vocab:dbo_APRASYMAS_tekstas>
+        <rdfs:label>APRASYMAS #6</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/7 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/7">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_APRASYMAS"/>
+        <vocab:dbo_APRASYMAS_fk_GYVUNASid_GYVUNAS rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/7"/>
+        <vocab:dbo_APRASYMAS_id_APRASYMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</vocab:dbo_APRASYMAS_id_APRASYMAS>
+        <vocab:dbo_APRASYMAS_tekstas>Meili ir draugiska katyte iesko nauju namu.</vocab:dbo_APRASYMAS_tekstas>
+        <rdfs:label>APRASYMAS #7</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/8 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/8">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_APRASYMAS"/>
+        <vocab:dbo_APRASYMAS_fk_GYVUNASid_GYVUNAS rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/8"/>
+        <vocab:dbo_APRASYMAS_id_APRASYMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</vocab:dbo_APRASYMAS_id_APRASYMAS>
+        <vocab:dbo_APRASYMAS_tekstas>Su dideliu charakteriu katinas iesko iskilmingu seimininku.</vocab:dbo_APRASYMAS_tekstas>
+        <rdfs:label>APRASYMAS #8</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/9 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/9">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_APRASYMAS"/>
+        <vocab:dbo_APRASYMAS_fk_GYVUNASid_GYVUNAS rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/9"/>
+        <vocab:dbo_APRASYMAS_id_APRASYMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</vocab:dbo_APRASYMAS_id_APRASYMAS>
+        <vocab:dbo_APRASYMAS_tekstas>Mazasis medziotojas su draugisku charackteriu iesko nauju namu.</vocab:dbo_APRASYMAS_tekstas>
+        <rdfs:label>APRASYMAS #9</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/ASMENS_PATIKRINIMAS/1 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/ASMENS_PATIKRINIMAS/1">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_ASMENS_PATIKRINIMAS"/>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_aprasymas>Asmuo tinkantis gyvunu priglaudimui.</vocab:dbo_ASMENS_PATIKRINIMAS_aprasymas>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-10</vocab:dbo_ASMENS_PATIKRINIMAS_data>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_fk_ASMUOid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/ASMUO/6"/>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/2"/>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_id_ASMENS_PATIKRINIMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</vocab:dbo_ASMENS_PATIKRINIMAS_id_ASMENS_PATIKRINIMAS>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_tinkamumas>1</vocab:dbo_ASMENS_PATIKRINIMAS_tinkamumas>
+        <rdfs:label>ASMENS_PATIKRINIMAS #1</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/ASMENS_PATIKRINIMAS/2 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/ASMENS_PATIKRINIMAS/2">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_ASMENS_PATIKRINIMAS"/>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_aprasymas>Asmuo netinkantis gyvunu priglaudimui. Asmuo dar nesulaukes pilnametystes.</vocab:dbo_ASMENS_PATIKRINIMAS_aprasymas>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-28</vocab:dbo_ASMENS_PATIKRINIMAS_data>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_fk_ASMUOid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/ASMUO/7"/>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/1"/>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_id_ASMENS_PATIKRINIMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</vocab:dbo_ASMENS_PATIKRINIMAS_id_ASMENS_PATIKRINIMAS>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_tinkamumas>0</vocab:dbo_ASMENS_PATIKRINIMAS_tinkamumas>
+        <rdfs:label>ASMENS_PATIKRINIMAS #2</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/ASMENS_PATIKRINIMAS/3 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/ASMENS_PATIKRINIMAS/3">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_ASMENS_PATIKRINIMAS"/>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_aprasymas>Asmuo tinkantis gyvunu priglaudimui.</vocab:dbo_ASMENS_PATIKRINIMAS_aprasymas>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-12</vocab:dbo_ASMENS_PATIKRINIMAS_data>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_fk_ASMUOid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/ASMUO/8"/>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/3"/>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_id_ASMENS_PATIKRINIMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</vocab:dbo_ASMENS_PATIKRINIMAS_id_ASMENS_PATIKRINIMAS>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_tinkamumas>1</vocab:dbo_ASMENS_PATIKRINIMAS_tinkamumas>
+        <rdfs:label>ASMENS_PATIKRINIMAS #3</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/ASMENS_PATIKRINIMAS/4 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/ASMENS_PATIKRINIMAS/4">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_ASMENS_PATIKRINIMAS"/>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_aprasymas>Asmuo netinkantis gyvunu priglaudimui. Asmuo yra padares nusizengimu ar nusikaltimu pries gyvunus.</vocab:dbo_ASMENS_PATIKRINIMAS_aprasymas>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-28</vocab:dbo_ASMENS_PATIKRINIMAS_data>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_fk_ASMUOid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/ASMUO/9"/>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/5"/>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_id_ASMENS_PATIKRINIMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</vocab:dbo_ASMENS_PATIKRINIMAS_id_ASMENS_PATIKRINIMAS>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_tinkamumas>0</vocab:dbo_ASMENS_PATIKRINIMAS_tinkamumas>
+        <rdfs:label>ASMENS_PATIKRINIMAS #4</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/ASMENS_PATIKRINIMAS/5 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/ASMENS_PATIKRINIMAS/5">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_ASMENS_PATIKRINIMAS"/>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_aprasymas>Asmuo tinkantis gyvunu priglaudimui.</vocab:dbo_ASMENS_PATIKRINIMAS_aprasymas>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-14</vocab:dbo_ASMENS_PATIKRINIMAS_data>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_fk_ASMUOid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/ASMUO/10"/>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/4"/>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_id_ASMENS_PATIKRINIMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</vocab:dbo_ASMENS_PATIKRINIMAS_id_ASMENS_PATIKRINIMAS>
+        <vocab:dbo_ASMENS_PATIKRINIMAS_tinkamumas>1</vocab:dbo_ASMENS_PATIKRINIMAS_tinkamumas>
+        <rdfs:label>ASMENS_PATIKRINIMAS #5</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/ASMUO/10 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/ASMUO/10">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_ASMUO"/>
+        <vocab:dbo_ASMUO_asmens_kodas>47669665856</vocab:dbo_ASMUO_asmens_kodas>
+        <vocab:dbo_ASMUO_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-06-02</vocab:dbo_ASMUO_gimimo_data>
+        <vocab:dbo_ASMUO_id_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/NAUDOTOJAS/10"/>
+        <vocab:dbo_ASMUO_pavarde>Murmantas</vocab:dbo_ASMUO_pavarde>
+        <vocab:dbo_ASMUO_vardas>Mantas</vocab:dbo_ASMUO_vardas>
+        <rdfs:label>ASMUO #10</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/ASMUO/6 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/ASMUO/6">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_ASMUO"/>
+        <vocab:dbo_ASMUO_asmens_kodas>47852214856</vocab:dbo_ASMUO_asmens_kodas>
+        <vocab:dbo_ASMUO_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1997-02-02</vocab:dbo_ASMUO_gimimo_data>
+        <vocab:dbo_ASMUO_id_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/NAUDOTOJAS/6"/>
+        <vocab:dbo_ASMUO_pavarde>Stulginskis</vocab:dbo_ASMUO_pavarde>
+        <vocab:dbo_ASMUO_vardas>Jonas</vocab:dbo_ASMUO_vardas>
+        <rdfs:label>ASMUO #6</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/ASMUO/7 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/ASMUO/7">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_ASMUO"/>
+        <vocab:dbo_ASMUO_asmens_kodas>47854156456</vocab:dbo_ASMUO_asmens_kodas>
+        <vocab:dbo_ASMUO_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007-02-22</vocab:dbo_ASMUO_gimimo_data>
+        <vocab:dbo_ASMUO_id_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/NAUDOTOJAS/7"/>
+        <vocab:dbo_ASMUO_pavarde>Butautas</vocab:dbo_ASMUO_pavarde>
+        <vocab:dbo_ASMUO_vardas>Mantas</vocab:dbo_ASMUO_vardas>
+        <rdfs:label>ASMUO #7</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/ASMUO/8 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/ASMUO/8">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_ASMUO"/>
+        <vocab:dbo_ASMUO_asmens_kodas>47852214856</vocab:dbo_ASMUO_asmens_kodas>
+        <vocab:dbo_ASMUO_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1991-07-02</vocab:dbo_ASMUO_gimimo_data>
+        <vocab:dbo_ASMUO_id_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/NAUDOTOJAS/8"/>
+        <vocab:dbo_ASMUO_pavarde>Kevalaitis</vocab:dbo_ASMUO_pavarde>
+        <vocab:dbo_ASMUO_vardas>Kevinas</vocab:dbo_ASMUO_vardas>
+        <rdfs:label>ASMUO #8</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/ASMUO/9 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/ASMUO/9">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_ASMUO"/>
+        <vocab:dbo_ASMUO_asmens_kodas>47877777777</vocab:dbo_ASMUO_asmens_kodas>
+        <vocab:dbo_ASMUO_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-02-12</vocab:dbo_ASMUO_gimimo_data>
+        <vocab:dbo_ASMUO_id_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/NAUDOTOJAS/9"/>
+        <vocab:dbo_ASMUO_pavarde>Askanius</vocab:dbo_ASMUO_pavarde>
+        <vocab:dbo_ASMUO_vardas>Algis</vocab:dbo_ASMUO_vardas>
+        <rdfs:label>ASMUO #9</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/DOKUMENTAS/1 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/DOKUMENTAS/1">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_DOKUMENTAS"/>
+        <vocab:dbo_DOKUMENTAS_dokumento_tipas>prasymas  </vocab:dbo_DOKUMENTAS_dokumento_tipas>
+        <vocab:dbo_DOKUMENTAS_fk_ASMUOid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/ASMUO/6"/>
+        <vocab:dbo_DOKUMENTAS_fk_GYVUNASid_GYVUNAS rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/8"/>
+        <vocab:dbo_DOKUMENTAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/3"/>
+        <vocab:dbo_DOKUMENTAS_id_DOKUMENTAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</vocab:dbo_DOKUMENTAS_id_DOKUMENTAS>
+        <vocab:dbo_DOKUMENTAS_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-19</vocab:dbo_DOKUMENTAS_sukurimo_data>
+        <vocab:dbo_DOKUMENTAS_tekstas>Prasymas priimti gyvuna globai.</vocab:dbo_DOKUMENTAS_tekstas>
+        <rdfs:label>DOKUMENTAS #1</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/DOKUMENTAS/2 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/DOKUMENTAS/2">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_DOKUMENTAS"/>
+        <vocab:dbo_DOKUMENTAS_dokumento_tipas>sutartis  </vocab:dbo_DOKUMENTAS_dokumento_tipas>
+        <vocab:dbo_DOKUMENTAS_fk_ASMUOid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/ASMUO/6"/>
+        <vocab:dbo_DOKUMENTAS_fk_GYVUNASid_GYVUNAS rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/8"/>
+        <vocab:dbo_DOKUMENTAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/3"/>
+        <vocab:dbo_DOKUMENTAS_id_DOKUMENTAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</vocab:dbo_DOKUMENTAS_id_DOKUMENTAS>
+        <vocab:dbo_DOKUMENTAS_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-20</vocab:dbo_DOKUMENTAS_sukurimo_data>
+        <vocab:dbo_DOKUMENTAS_tekstas>Gyvuno globos sutartis.</vocab:dbo_DOKUMENTAS_tekstas>
+        <rdfs:label>DOKUMENTAS #2</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/DOKUMENTAS/3 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/DOKUMENTAS/3">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_DOKUMENTAS"/>
+        <vocab:dbo_DOKUMENTAS_dokumento_tipas>prasymas  </vocab:dbo_DOKUMENTAS_dokumento_tipas>
+        <vocab:dbo_DOKUMENTAS_fk_ASMUOid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/ASMUO/10"/>
+        <vocab:dbo_DOKUMENTAS_fk_GYVUNASid_GYVUNAS rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/12"/>
+        <vocab:dbo_DOKUMENTAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/4"/>
+        <vocab:dbo_DOKUMENTAS_id_DOKUMENTAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</vocab:dbo_DOKUMENTAS_id_DOKUMENTAS>
+        <vocab:dbo_DOKUMENTAS_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-19</vocab:dbo_DOKUMENTAS_sukurimo_data>
+        <vocab:dbo_DOKUMENTAS_tekstas>Prasymas priimti gyvuna globai.</vocab:dbo_DOKUMENTAS_tekstas>
+        <rdfs:label>DOKUMENTAS #3</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/DOKUMENTAS/4 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/DOKUMENTAS/4">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_DOKUMENTAS"/>
+        <vocab:dbo_DOKUMENTAS_dokumento_tipas>sutartis  </vocab:dbo_DOKUMENTAS_dokumento_tipas>
+        <vocab:dbo_DOKUMENTAS_fk_ASMUOid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/ASMUO/10"/>
+        <vocab:dbo_DOKUMENTAS_fk_GYVUNASid_GYVUNAS rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/12"/>
+        <vocab:dbo_DOKUMENTAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/4"/>
+        <vocab:dbo_DOKUMENTAS_id_DOKUMENTAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</vocab:dbo_DOKUMENTAS_id_DOKUMENTAS>
+        <vocab:dbo_DOKUMENTAS_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-20</vocab:dbo_DOKUMENTAS_sukurimo_data>
+        <vocab:dbo_DOKUMENTAS_tekstas>Gyvuno globos sutartis.</vocab:dbo_DOKUMENTAS_tekstas>
+        <rdfs:label>DOKUMENTAS #4</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/DOKUMENTAS/5 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/DOKUMENTAS/5">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_DOKUMENTAS"/>
+        <vocab:dbo_DOKUMENTAS_dokumento_tipas>grazinimas</vocab:dbo_DOKUMENTAS_dokumento_tipas>
+        <vocab:dbo_DOKUMENTAS_fk_ASMUOid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/ASMUO/10"/>
+        <vocab:dbo_DOKUMENTAS_fk_GYVUNASid_GYVUNAS rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/12"/>
+        <vocab:dbo_DOKUMENTAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/4"/>
+        <vocab:dbo_DOKUMENTAS_id_DOKUMENTAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</vocab:dbo_DOKUMENTAS_id_DOKUMENTAS>
+        <vocab:dbo_DOKUMENTAS_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-28</vocab:dbo_DOKUMENTAS_sukurimo_data>
+        <vocab:dbo_DOKUMENTAS_tekstas>Gyvuno grazinimas.</vocab:dbo_DOKUMENTAS_tekstas>
+        <rdfs:label>DOKUMENTAS #5</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/DOKUMENTAS/6 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/DOKUMENTAS/6">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_DOKUMENTAS"/>
+        <vocab:dbo_DOKUMENTAS_dokumento_tipas>prasymas  </vocab:dbo_DOKUMENTAS_dokumento_tipas>
+        <vocab:dbo_DOKUMENTAS_fk_ASMUOid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/ASMUO/7"/>
+        <vocab:dbo_DOKUMENTAS_fk_GYVUNASid_GYVUNAS rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/3"/>
+        <vocab:dbo_DOKUMENTAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/1"/>
+        <vocab:dbo_DOKUMENTAS_id_DOKUMENTAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</vocab:dbo_DOKUMENTAS_id_DOKUMENTAS>
+        <vocab:dbo_DOKUMENTAS_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-28</vocab:dbo_DOKUMENTAS_sukurimo_data>
+        <vocab:dbo_DOKUMENTAS_tekstas>Prasymas priimti gyvuna globai.</vocab:dbo_DOKUMENTAS_tekstas>
+        <rdfs:label>DOKUMENTAS #6</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/DOKUMENTAS/7 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/DOKUMENTAS/7">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_DOKUMENTAS"/>
+        <vocab:dbo_DOKUMENTAS_dokumento_tipas>prasymas  </vocab:dbo_DOKUMENTAS_dokumento_tipas>
+        <vocab:dbo_DOKUMENTAS_fk_ASMUOid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/ASMUO/9"/>
+        <vocab:dbo_DOKUMENTAS_fk_GYVUNASid_GYVUNAS rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/15"/>
+        <vocab:dbo_DOKUMENTAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/5"/>
+        <vocab:dbo_DOKUMENTAS_id_DOKUMENTAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</vocab:dbo_DOKUMENTAS_id_DOKUMENTAS>
+        <vocab:dbo_DOKUMENTAS_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-28</vocab:dbo_DOKUMENTAS_sukurimo_data>
+        <vocab:dbo_DOKUMENTAS_tekstas>Prasymas priimti gyvuna globai.</vocab:dbo_DOKUMENTAS_tekstas>
+        <rdfs:label>DOKUMENTAS #7</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GRAZINIMAS/1 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GRAZINIMAS/1">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_GRAZINIMAS"/>
+        <vocab:dbo_GRAZINIMAS_grazinimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-28</vocab:dbo_GRAZINIMAS_grazinimo_data>
+        <vocab:dbo_GRAZINIMAS_id_DOKUMENTAS rdf:resource="http://localhost:2020/resource/dbo/DOKUMENTAS/1"/>
+        <rdfs:label>GRAZINIMAS #1</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/1 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/1">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_GYVUNAS"/>
+        <vocab:dbo_GYVUNAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/1"/>
+        <vocab:dbo_GYVUNAS_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-02</vocab:dbo_GYVUNAS_gimimo_data>
+        <vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>XL </vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>
+        <vocab:dbo_GYVUNAS_id_GYVUNAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</vocab:dbo_GYVUNAS_id_GYVUNAS>
+        <vocab:dbo_GYVUNAS_rusis>suo        </vocab:dbo_GYVUNAS_rusis>
+        <vocab:dbo_GYVUNAS_vardas>Amsius</vocab:dbo_GYVUNAS_vardas>
+        <rdfs:label>GYVUNAS #1</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/10 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/10">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_GYVUNAS"/>
+        <vocab:dbo_GYVUNAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/4"/>
+        <vocab:dbo_GYVUNAS_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-02-02</vocab:dbo_GYVUNAS_gimimo_data>
+        <vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>M  </vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>
+        <vocab:dbo_GYVUNAS_id_GYVUNAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</vocab:dbo_GYVUNAS_id_GYVUNAS>
+        <vocab:dbo_GYVUNAS_rusis>roplys     </vocab:dbo_GYVUNAS_rusis>
+        <vocab:dbo_GYVUNAS_vardas>Freda</vocab:dbo_GYVUNAS_vardas>
+        <vocab:dbo_GYVUNAS_veisle>Driezas</vocab:dbo_GYVUNAS_veisle>
+        <rdfs:label>GYVUNAS #10</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/11 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/11">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_GYVUNAS"/>
+        <vocab:dbo_GYVUNAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/4"/>
+        <vocab:dbo_GYVUNAS_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-07-02</vocab:dbo_GYVUNAS_gimimo_data>
+        <vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>S  </vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>
+        <vocab:dbo_GYVUNAS_id_GYVUNAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</vocab:dbo_GYVUNAS_id_GYVUNAS>
+        <vocab:dbo_GYVUNAS_rusis>grauzikas  </vocab:dbo_GYVUNAS_rusis>
+        <vocab:dbo_GYVUNAS_vardas>Klaja</vocab:dbo_GYVUNAS_vardas>
+        <vocab:dbo_GYVUNAS_veisle>Ziurkenas</vocab:dbo_GYVUNAS_veisle>
+        <rdfs:label>GYVUNAS #11</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/12 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/12">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_GYVUNAS"/>
+        <vocab:dbo_GYVUNAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/4"/>
+        <vocab:dbo_GYVUNAS_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-06-02</vocab:dbo_GYVUNAS_gimimo_data>
+        <vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>S  </vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>
+        <vocab:dbo_GYVUNAS_id_GYVUNAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</vocab:dbo_GYVUNAS_id_GYVUNAS>
+        <vocab:dbo_GYVUNAS_rusis>varliagyvis</vocab:dbo_GYVUNAS_rusis>
+        <vocab:dbo_GYVUNAS_vardas>Strakse</vocab:dbo_GYVUNAS_vardas>
+        <vocab:dbo_GYVUNAS_veisle>Varle</vocab:dbo_GYVUNAS_veisle>
+        <rdfs:label>GYVUNAS #12</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/13 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/13">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_GYVUNAS"/>
+        <vocab:dbo_GYVUNAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/5"/>
+        <vocab:dbo_GYVUNAS_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-02-02</vocab:dbo_GYVUNAS_gimimo_data>
+        <vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>S  </vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>
+        <vocab:dbo_GYVUNAS_id_GYVUNAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</vocab:dbo_GYVUNAS_id_GYVUNAS>
+        <vocab:dbo_GYVUNAS_rusis>kate       </vocab:dbo_GYVUNAS_rusis>
+        <vocab:dbo_GYVUNAS_vardas>Bukis</vocab:dbo_GYVUNAS_vardas>
+        <vocab:dbo_GYVUNAS_veisle>Nulepause</vocab:dbo_GYVUNAS_veisle>
+        <rdfs:label>GYVUNAS #13</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/14 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/14">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_GYVUNAS"/>
+        <vocab:dbo_GYVUNAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/5"/>
+        <vocab:dbo_GYVUNAS_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-22</vocab:dbo_GYVUNAS_gimimo_data>
+        <vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>S  </vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>
+        <vocab:dbo_GYVUNAS_id_GYVUNAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</vocab:dbo_GYVUNAS_id_GYVUNAS>
+        <vocab:dbo_GYVUNAS_rusis>kate       </vocab:dbo_GYVUNAS_rusis>
+        <vocab:dbo_GYVUNAS_vardas>Nima</vocab:dbo_GYVUNAS_vardas>
+        <vocab:dbo_GYVUNAS_veisle>Melynoji</vocab:dbo_GYVUNAS_veisle>
+        <rdfs:label>GYVUNAS #14</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/15 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/15">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_GYVUNAS"/>
+        <vocab:dbo_GYVUNAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/5"/>
+        <vocab:dbo_GYVUNAS_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-07-02</vocab:dbo_GYVUNAS_gimimo_data>
+        <vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>M  </vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>
+        <vocab:dbo_GYVUNAS_id_GYVUNAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</vocab:dbo_GYVUNAS_id_GYVUNAS>
+        <vocab:dbo_GYVUNAS_rusis>kate       </vocab:dbo_GYVUNAS_rusis>
+        <vocab:dbo_GYVUNAS_vardas>Santa</vocab:dbo_GYVUNAS_vardas>
+        <vocab:dbo_GYVUNAS_veisle>Baltoji</vocab:dbo_GYVUNAS_veisle>
+        <rdfs:label>GYVUNAS #15</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/2 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/2">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_GYVUNAS"/>
+        <vocab:dbo_GYVUNAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/1"/>
+        <vocab:dbo_GYVUNAS_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-02-22</vocab:dbo_GYVUNAS_gimimo_data>
+        <vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>S  </vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>
+        <vocab:dbo_GYVUNAS_id_GYVUNAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</vocab:dbo_GYVUNAS_id_GYVUNAS>
+        <vocab:dbo_GYVUNAS_rusis>suo        </vocab:dbo_GYVUNAS_rusis>
+        <vocab:dbo_GYVUNAS_vardas>Blizgis</vocab:dbo_GYVUNAS_vardas>
+        <vocab:dbo_GYVUNAS_veisle>Chihuahua</vocab:dbo_GYVUNAS_veisle>
+        <rdfs:label>GYVUNAS #2</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/3 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/3">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_GYVUNAS"/>
+        <vocab:dbo_GYVUNAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/1"/>
+        <vocab:dbo_GYVUNAS_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-02</vocab:dbo_GYVUNAS_gimimo_data>
+        <vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>L  </vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>
+        <vocab:dbo_GYVUNAS_id_GYVUNAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</vocab:dbo_GYVUNAS_id_GYVUNAS>
+        <vocab:dbo_GYVUNAS_rusis>suo        </vocab:dbo_GYVUNAS_rusis>
+        <vocab:dbo_GYVUNAS_vardas>Mikas</vocab:dbo_GYVUNAS_vardas>
+        <vocab:dbo_GYVUNAS_veisle>Buldogas</vocab:dbo_GYVUNAS_veisle>
+        <rdfs:label>GYVUNAS #3</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/4 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/4">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_GYVUNAS"/>
+        <vocab:dbo_GYVUNAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/2"/>
+        <vocab:dbo_GYVUNAS_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-02</vocab:dbo_GYVUNAS_gimimo_data>
+        <vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>XL </vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>
+        <vocab:dbo_GYVUNAS_id_GYVUNAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</vocab:dbo_GYVUNAS_id_GYVUNAS>
+        <vocab:dbo_GYVUNAS_rusis>suo        </vocab:dbo_GYVUNAS_rusis>
+        <vocab:dbo_GYVUNAS_vardas>Binkis</vocab:dbo_GYVUNAS_vardas>
+        <vocab:dbo_GYVUNAS_veisle>Dobermanas</vocab:dbo_GYVUNAS_veisle>
+        <rdfs:label>GYVUNAS #4</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/5 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/5">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_GYVUNAS"/>
+        <vocab:dbo_GYVUNAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/2"/>
+        <vocab:dbo_GYVUNAS_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-02-12</vocab:dbo_GYVUNAS_gimimo_data>
+        <vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>S  </vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>
+        <vocab:dbo_GYVUNAS_id_GYVUNAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</vocab:dbo_GYVUNAS_id_GYVUNAS>
+        <vocab:dbo_GYVUNAS_rusis>grauzikas  </vocab:dbo_GYVUNAS_rusis>
+        <vocab:dbo_GYVUNAS_vardas>Kudlius</vocab:dbo_GYVUNAS_vardas>
+        <vocab:dbo_GYVUNAS_veisle>Degutis</vocab:dbo_GYVUNAS_veisle>
+        <rdfs:label>GYVUNAS #5</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/6 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/6">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_GYVUNAS"/>
+        <vocab:dbo_GYVUNAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/2"/>
+        <vocab:dbo_GYVUNAS_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-06-02</vocab:dbo_GYVUNAS_gimimo_data>
+        <vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>S  </vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>
+        <vocab:dbo_GYVUNAS_id_GYVUNAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</vocab:dbo_GYVUNAS_id_GYVUNAS>
+        <vocab:dbo_GYVUNAS_rusis>paukstis   </vocab:dbo_GYVUNAS_rusis>
+        <vocab:dbo_GYVUNAS_vardas>Smiltis</vocab:dbo_GYVUNAS_vardas>
+        <vocab:dbo_GYVUNAS_veisle>Papuga</vocab:dbo_GYVUNAS_veisle>
+        <rdfs:label>GYVUNAS #6</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/7 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/7">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_GYVUNAS"/>
+        <vocab:dbo_GYVUNAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/3"/>
+        <vocab:dbo_GYVUNAS_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-02-02</vocab:dbo_GYVUNAS_gimimo_data>
+        <vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>M  </vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>
+        <vocab:dbo_GYVUNAS_id_GYVUNAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</vocab:dbo_GYVUNAS_id_GYVUNAS>
+        <vocab:dbo_GYVUNAS_rusis>kate       </vocab:dbo_GYVUNAS_rusis>
+        <vocab:dbo_GYVUNAS_vardas>Spaikas</vocab:dbo_GYVUNAS_vardas>
+        <rdfs:label>GYVUNAS #7</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/8 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/8">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_GYVUNAS"/>
+        <vocab:dbo_GYVUNAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/3"/>
+        <vocab:dbo_GYVUNAS_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-02-22</vocab:dbo_GYVUNAS_gimimo_data>
+        <vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>M  </vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>
+        <vocab:dbo_GYVUNAS_id_GYVUNAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</vocab:dbo_GYVUNAS_id_GYVUNAS>
+        <vocab:dbo_GYVUNAS_rusis>kate       </vocab:dbo_GYVUNAS_rusis>
+        <vocab:dbo_GYVUNAS_vardas>Puikis</vocab:dbo_GYVUNAS_vardas>
+        <rdfs:label>GYVUNAS #8</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/9 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/9">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_GYVUNAS"/>
+        <vocab:dbo_GYVUNAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/3"/>
+        <vocab:dbo_GYVUNAS_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-02</vocab:dbo_GYVUNAS_gimimo_data>
+        <vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>L  </vocab:dbo_GYVUNAS_gyvno_dydzio_kategorija>
+        <vocab:dbo_GYVUNAS_id_GYVUNAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</vocab:dbo_GYVUNAS_id_GYVUNAS>
+        <vocab:dbo_GYVUNAS_rusis>kate       </vocab:dbo_GYVUNAS_rusis>
+        <vocab:dbo_GYVUNAS_vardas>Milkis</vocab:dbo_GYVUNAS_vardas>
+        <vocab:dbo_GYVUNAS_veisle>Abisinija</vocab:dbo_GYVUNAS_veisle>
+        <rdfs:label>GYVUNAS #9</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/NAUDOTOJAS/1 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/1">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_NAUDOTOJAS"/>
+        <vocab:dbo_NAUDOTOJAS_adresas>Vasario 16-osios g. 15, Kaunas</vocab:dbo_NAUDOTOJAS_adresas>
+        <vocab:dbo_NAUDOTOJAS_elektroninis_pastas>nuaras@gmail.com</vocab:dbo_NAUDOTOJAS_elektroninis_pastas>
+        <vocab:dbo_NAUDOTOJAS_id_NAUDOTOJAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</vocab:dbo_NAUDOTOJAS_id_NAUDOTOJAS>
+        <vocab:dbo_NAUDOTOJAS_naudotojo_tipas>prieglauda</vocab:dbo_NAUDOTOJAS_naudotojo_tipas>
+        <vocab:dbo_NAUDOTOJAS_registracijos_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-04-07</vocab:dbo_NAUDOTOJAS_registracijos_data>
+        <vocab:dbo_NAUDOTOJAS_telefono_numeris>+37054196854</vocab:dbo_NAUDOTOJAS_telefono_numeris>
+        <rdfs:label>NAUDOTOJAS #1</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/NAUDOTOJAS/10 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/10">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_NAUDOTOJAS"/>
+        <vocab:dbo_NAUDOTOJAS_adresas>Vilniaus g. 231, Kaunas</vocab:dbo_NAUDOTOJAS_adresas>
+        <vocab:dbo_NAUDOTOJAS_elektroninis_pastas>marmurmantas600@gmail.com</vocab:dbo_NAUDOTOJAS_elektroninis_pastas>
+        <vocab:dbo_NAUDOTOJAS_id_NAUDOTOJAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</vocab:dbo_NAUDOTOJAS_id_NAUDOTOJAS>
+        <vocab:dbo_NAUDOTOJAS_naudotojo_tipas>asmuo     </vocab:dbo_NAUDOTOJAS_naudotojo_tipas>
+        <vocab:dbo_NAUDOTOJAS_registracijos_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-15</vocab:dbo_NAUDOTOJAS_registracijos_data>
+        <vocab:dbo_NAUDOTOJAS_telefono_numeris>+37023477852</vocab:dbo_NAUDOTOJAS_telefono_numeris>
+        <rdfs:label>NAUDOTOJAS #10</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/NAUDOTOJAS/2 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/2">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_NAUDOTOJAS"/>
+        <vocab:dbo_NAUDOTOJAS_adresas>Matulio g. 47, Vilnius</vocab:dbo_NAUDOTOJAS_adresas>
+        <vocab:dbo_NAUDOTOJAS_elektroninis_pastas>penktakoja@gmail.com</vocab:dbo_NAUDOTOJAS_elektroninis_pastas>
+        <vocab:dbo_NAUDOTOJAS_id_NAUDOTOJAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</vocab:dbo_NAUDOTOJAS_id_NAUDOTOJAS>
+        <vocab:dbo_NAUDOTOJAS_naudotojo_tipas>prieglauda</vocab:dbo_NAUDOTOJAS_naudotojo_tipas>
+        <vocab:dbo_NAUDOTOJAS_registracijos_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-09-09</vocab:dbo_NAUDOTOJAS_registracijos_data>
+        <vocab:dbo_NAUDOTOJAS_telefono_numeris>+37076785677</vocab:dbo_NAUDOTOJAS_telefono_numeris>
+        <rdfs:label>NAUDOTOJAS #2</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/NAUDOTOJAS/3 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/3">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_NAUDOTOJAS"/>
+        <vocab:dbo_NAUDOTOJAS_adresas>J.Basanaviciaus g. 33, Kaunas</vocab:dbo_NAUDOTOJAS_adresas>
+        <vocab:dbo_NAUDOTOJAS_elektroninis_pastas>katinukas@gmail.com</vocab:dbo_NAUDOTOJAS_elektroninis_pastas>
+        <vocab:dbo_NAUDOTOJAS_id_NAUDOTOJAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</vocab:dbo_NAUDOTOJAS_id_NAUDOTOJAS>
+        <vocab:dbo_NAUDOTOJAS_naudotojo_tipas>prieglauda</vocab:dbo_NAUDOTOJAS_naudotojo_tipas>
+        <vocab:dbo_NAUDOTOJAS_registracijos_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-01</vocab:dbo_NAUDOTOJAS_registracijos_data>
+        <vocab:dbo_NAUDOTOJAS_telefono_numeris>+37078567878</vocab:dbo_NAUDOTOJAS_telefono_numeris>
+        <rdfs:label>NAUDOTOJAS #3</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/NAUDOTOJAS/4 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/4">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_NAUDOTOJAS"/>
+        <vocab:dbo_NAUDOTOJAS_adresas>Jonavos g. 231, Kaunas</vocab:dbo_NAUDOTOJAS_adresas>
+        <vocab:dbo_NAUDOTOJAS_elektroninis_pastas>sleptuve@gmail.com</vocab:dbo_NAUDOTOJAS_elektroninis_pastas>
+        <vocab:dbo_NAUDOTOJAS_id_NAUDOTOJAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</vocab:dbo_NAUDOTOJAS_id_NAUDOTOJAS>
+        <vocab:dbo_NAUDOTOJAS_naudotojo_tipas>prieglauda</vocab:dbo_NAUDOTOJAS_naudotojo_tipas>
+        <vocab:dbo_NAUDOTOJAS_registracijos_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-05-07</vocab:dbo_NAUDOTOJAS_registracijos_data>
+        <vocab:dbo_NAUDOTOJAS_telefono_numeris>+37023477852</vocab:dbo_NAUDOTOJAS_telefono_numeris>
+        <rdfs:label>NAUDOTOJAS #4</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/NAUDOTOJAS/5 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/5">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_NAUDOTOJAS"/>
+        <vocab:dbo_NAUDOTOJAS_adresas>Arbatos g. 11, Vilnius</vocab:dbo_NAUDOTOJAS_adresas>
+        <vocab:dbo_NAUDOTOJAS_elektroninis_pastas>rainiukai@gmail.com</vocab:dbo_NAUDOTOJAS_elektroninis_pastas>
+        <vocab:dbo_NAUDOTOJAS_id_NAUDOTOJAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</vocab:dbo_NAUDOTOJAS_id_NAUDOTOJAS>
+        <vocab:dbo_NAUDOTOJAS_naudotojo_tipas>prieglauda</vocab:dbo_NAUDOTOJAS_naudotojo_tipas>
+        <vocab:dbo_NAUDOTOJAS_registracijos_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-10-01</vocab:dbo_NAUDOTOJAS_registracijos_data>
+        <vocab:dbo_NAUDOTOJAS_telefono_numeris>+37231545345</vocab:dbo_NAUDOTOJAS_telefono_numeris>
+        <rdfs:label>NAUDOTOJAS #5</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/NAUDOTOJAS/6 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/6">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_NAUDOTOJAS"/>
+        <vocab:dbo_NAUDOTOJAS_adresas>Sarkos g. 22, Kaunas</vocab:dbo_NAUDOTOJAS_adresas>
+        <vocab:dbo_NAUDOTOJAS_elektroninis_pastas>jonas.stul41@gmail.com</vocab:dbo_NAUDOTOJAS_elektroninis_pastas>
+        <vocab:dbo_NAUDOTOJAS_id_NAUDOTOJAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</vocab:dbo_NAUDOTOJAS_id_NAUDOTOJAS>
+        <vocab:dbo_NAUDOTOJAS_naudotojo_tipas>asmuo     </vocab:dbo_NAUDOTOJAS_naudotojo_tipas>
+        <vocab:dbo_NAUDOTOJAS_registracijos_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-11</vocab:dbo_NAUDOTOJAS_registracijos_data>
+        <vocab:dbo_NAUDOTOJAS_telefono_numeris>+37054196854</vocab:dbo_NAUDOTOJAS_telefono_numeris>
+        <rdfs:label>NAUDOTOJAS #6</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/NAUDOTOJAS/7 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/7">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_NAUDOTOJAS"/>
+        <vocab:dbo_NAUDOTOJAS_adresas>Kipro g. 47, Vilnius</vocab:dbo_NAUDOTOJAS_adresas>
+        <vocab:dbo_NAUDOTOJAS_elektroninis_pastas>mantasbut7@gmail.com</vocab:dbo_NAUDOTOJAS_elektroninis_pastas>
+        <vocab:dbo_NAUDOTOJAS_id_NAUDOTOJAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</vocab:dbo_NAUDOTOJAS_id_NAUDOTOJAS>
+        <vocab:dbo_NAUDOTOJAS_naudotojo_tipas>asmuo     </vocab:dbo_NAUDOTOJAS_naudotojo_tipas>
+        <vocab:dbo_NAUDOTOJAS_registracijos_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-18</vocab:dbo_NAUDOTOJAS_registracijos_data>
+        <vocab:dbo_NAUDOTOJAS_telefono_numeris>+37076785677</vocab:dbo_NAUDOTOJAS_telefono_numeris>
+        <rdfs:label>NAUDOTOJAS #7</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/NAUDOTOJAS/8 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/8">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_NAUDOTOJAS"/>
+        <vocab:dbo_NAUDOTOJAS_adresas>Miesto g. 142, Vilnius</vocab:dbo_NAUDOTOJAS_adresas>
+        <vocab:dbo_NAUDOTOJAS_elektroninis_pastas>kevinaskevin01@gmail.com</vocab:dbo_NAUDOTOJAS_elektroninis_pastas>
+        <vocab:dbo_NAUDOTOJAS_id_NAUDOTOJAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</vocab:dbo_NAUDOTOJAS_id_NAUDOTOJAS>
+        <vocab:dbo_NAUDOTOJAS_naudotojo_tipas>asmuo     </vocab:dbo_NAUDOTOJAS_naudotojo_tipas>
+        <vocab:dbo_NAUDOTOJAS_registracijos_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-01</vocab:dbo_NAUDOTOJAS_registracijos_data>
+        <vocab:dbo_NAUDOTOJAS_telefono_numeris>+37054535464</vocab:dbo_NAUDOTOJAS_telefono_numeris>
+        <rdfs:label>NAUDOTOJAS #8</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/NAUDOTOJAS/9 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/9">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_NAUDOTOJAS"/>
+        <vocab:dbo_NAUDOTOJAS_adresas>Liepu g. 33, Kaunas</vocab:dbo_NAUDOTOJAS_adresas>
+        <vocab:dbo_NAUDOTOJAS_elektroninis_pastas>askagialgis5@gmail.com</vocab:dbo_NAUDOTOJAS_elektroninis_pastas>
+        <vocab:dbo_NAUDOTOJAS_id_NAUDOTOJAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</vocab:dbo_NAUDOTOJAS_id_NAUDOTOJAS>
+        <vocab:dbo_NAUDOTOJAS_naudotojo_tipas>asmuo     </vocab:dbo_NAUDOTOJAS_naudotojo_tipas>
+        <vocab:dbo_NAUDOTOJAS_registracijos_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-13</vocab:dbo_NAUDOTOJAS_registracijos_data>
+        <vocab:dbo_NAUDOTOJAS_telefono_numeris>+37078567878</vocab:dbo_NAUDOTOJAS_telefono_numeris>
+        <rdfs:label>NAUDOTOJAS #9</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/PRASYMAS/1 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/PRASYMAS/1">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_PRASYMAS"/>
+        <vocab:dbo_PRASYMAS_busena>patvirtintas  </vocab:dbo_PRASYMAS_busena>
+        <vocab:dbo_PRASYMAS_id_DOKUMENTAS rdf:resource="http://localhost:2020/resource/dbo/DOKUMENTAS/1"/>
+        <rdfs:label>PRASYMAS #1</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/PRASYMAS/3 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/PRASYMAS/3">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_PRASYMAS"/>
+        <vocab:dbo_PRASYMAS_busena>patvirtintas  </vocab:dbo_PRASYMAS_busena>
+        <vocab:dbo_PRASYMAS_id_DOKUMENTAS rdf:resource="http://localhost:2020/resource/dbo/DOKUMENTAS/3"/>
+        <rdfs:label>PRASYMAS #3</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/PRASYMAS/6 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/PRASYMAS/6">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_PRASYMAS"/>
+        <vocab:dbo_PRASYMAS_busena>atmestas      </vocab:dbo_PRASYMAS_busena>
+        <vocab:dbo_PRASYMAS_id_DOKUMENTAS rdf:resource="http://localhost:2020/resource/dbo/DOKUMENTAS/6"/>
+        <rdfs:label>PRASYMAS #6</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/PRASYMAS/7 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/PRASYMAS/7">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_PRASYMAS"/>
+        <vocab:dbo_PRASYMAS_busena>atmestas      </vocab:dbo_PRASYMAS_busena>
+        <vocab:dbo_PRASYMAS_id_DOKUMENTAS rdf:resource="http://localhost:2020/resource/dbo/DOKUMENTAS/7"/>
+        <rdfs:label>PRASYMAS #7</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/PRIEGLAUDA/1 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/PRIEGLAUDA/1">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_PRIEGLAUDA"/>
+        <vocab:dbo_PRIEGLAUDA_id_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/NAUDOTOJAS/1"/>
+        <vocab:dbo_PRIEGLAUDA_imones_kodas>LT15848</vocab:dbo_PRIEGLAUDA_imones_kodas>
+        <vocab:dbo_PRIEGLAUDA_pavadinimas>Nuaras</vocab:dbo_PRIEGLAUDA_pavadinimas>
+        <rdfs:label>PRIEGLAUDA #1</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/PRIEGLAUDA/2 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/PRIEGLAUDA/2">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_PRIEGLAUDA"/>
+        <vocab:dbo_PRIEGLAUDA_id_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/NAUDOTOJAS/2"/>
+        <vocab:dbo_PRIEGLAUDA_imones_kodas>LT45644</vocab:dbo_PRIEGLAUDA_imones_kodas>
+        <vocab:dbo_PRIEGLAUDA_pavadinimas>Penkta koja</vocab:dbo_PRIEGLAUDA_pavadinimas>
+        <rdfs:label>PRIEGLAUDA #2</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/PRIEGLAUDA/3 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/PRIEGLAUDA/3">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_PRIEGLAUDA"/>
+        <vocab:dbo_PRIEGLAUDA_id_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/NAUDOTOJAS/3"/>
+        <vocab:dbo_PRIEGLAUDA_imones_kodas>LT78321</vocab:dbo_PRIEGLAUDA_imones_kodas>
+        <vocab:dbo_PRIEGLAUDA_pavadinimas>Katinuko namai</vocab:dbo_PRIEGLAUDA_pavadinimas>
+        <rdfs:label>PRIEGLAUDA #3</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/PRIEGLAUDA/4 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/PRIEGLAUDA/4">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_PRIEGLAUDA"/>
+        <vocab:dbo_PRIEGLAUDA_id_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/NAUDOTOJAS/4"/>
+        <vocab:dbo_PRIEGLAUDA_imones_kodas>LT12547</vocab:dbo_PRIEGLAUDA_imones_kodas>
+        <vocab:dbo_PRIEGLAUDA_pavadinimas>Gyvunu sleptuve</vocab:dbo_PRIEGLAUDA_pavadinimas>
+        <rdfs:label>PRIEGLAUDA #4</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/PRIEGLAUDA/5 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/PRIEGLAUDA/5">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_PRIEGLAUDA"/>
+        <vocab:dbo_PRIEGLAUDA_id_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/NAUDOTOJAS/5"/>
+        <vocab:dbo_PRIEGLAUDA_imones_kodas>LT78989</vocab:dbo_PRIEGLAUDA_imones_kodas>
+        <vocab:dbo_PRIEGLAUDA_pavadinimas>Rainiukai</vocab:dbo_PRIEGLAUDA_pavadinimas>
+        <rdfs:label>PRIEGLAUDA #5</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/SUSITIKIMAS/1 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/1">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_SUSITIKIMAS"/>
+        <vocab:dbo_SUSITIKIMAS_fk_ASMUOid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/ASMUO/6"/>
+        <vocab:dbo_SUSITIKIMAS_fk_GYVUNASid_GYVUNAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</vocab:dbo_SUSITIKIMAS_fk_GYVUNASid_GYVUNAS>
+        <vocab:dbo_SUSITIKIMAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/3"/>
+        <vocab:dbo_SUSITIKIMAS_id_SUSITIKIMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</vocab:dbo_SUSITIKIMAS_id_SUSITIKIMAS>
+        <vocab:dbo_SUSITIKIMAS_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-10</vocab:dbo_SUSITIKIMAS_sukurimo_data>
+        <vocab:dbo_SUSITIKIMAS_susitikimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</vocab:dbo_SUSITIKIMAS_susitikimo_data>
+        <rdfs:label>SUSITIKIMAS #1</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/SUSITIKIMAS/10 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/10">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_SUSITIKIMAS"/>
+        <vocab:dbo_SUSITIKIMAS_fk_ASMUOid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/ASMUO/10"/>
+        <vocab:dbo_SUSITIKIMAS_fk_GYVUNASid_GYVUNAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</vocab:dbo_SUSITIKIMAS_fk_GYVUNASid_GYVUNAS>
+        <vocab:dbo_SUSITIKIMAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/4"/>
+        <vocab:dbo_SUSITIKIMAS_id_SUSITIKIMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</vocab:dbo_SUSITIKIMAS_id_SUSITIKIMAS>
+        <vocab:dbo_SUSITIKIMAS_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-10</vocab:dbo_SUSITIKIMAS_sukurimo_data>
+        <vocab:dbo_SUSITIKIMAS_susitikimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</vocab:dbo_SUSITIKIMAS_susitikimo_data>
+        <rdfs:label>SUSITIKIMAS #10</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/SUSITIKIMAS/2 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/2">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_SUSITIKIMAS"/>
+        <vocab:dbo_SUSITIKIMAS_fk_ASMUOid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/ASMUO/6"/>
+        <vocab:dbo_SUSITIKIMAS_fk_GYVUNASid_GYVUNAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</vocab:dbo_SUSITIKIMAS_fk_GYVUNASid_GYVUNAS>
+        <vocab:dbo_SUSITIKIMAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/3"/>
+        <vocab:dbo_SUSITIKIMAS_id_SUSITIKIMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</vocab:dbo_SUSITIKIMAS_id_SUSITIKIMAS>
+        <vocab:dbo_SUSITIKIMAS_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-10</vocab:dbo_SUSITIKIMAS_sukurimo_data>
+        <vocab:dbo_SUSITIKIMAS_susitikimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</vocab:dbo_SUSITIKIMAS_susitikimo_data>
+        <rdfs:label>SUSITIKIMAS #2</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/SUSITIKIMAS/3 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/3">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_SUSITIKIMAS"/>
+        <vocab:dbo_SUSITIKIMAS_fk_ASMUOid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/ASMUO/6"/>
+        <vocab:dbo_SUSITIKIMAS_fk_GYVUNASid_GYVUNAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</vocab:dbo_SUSITIKIMAS_fk_GYVUNASid_GYVUNAS>
+        <vocab:dbo_SUSITIKIMAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/5"/>
+        <vocab:dbo_SUSITIKIMAS_id_SUSITIKIMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</vocab:dbo_SUSITIKIMAS_id_SUSITIKIMAS>
+        <vocab:dbo_SUSITIKIMAS_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-10</vocab:dbo_SUSITIKIMAS_sukurimo_data>
+        <vocab:dbo_SUSITIKIMAS_susitikimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</vocab:dbo_SUSITIKIMAS_susitikimo_data>
+        <rdfs:label>SUSITIKIMAS #3</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/SUSITIKIMAS/4 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/4">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_SUSITIKIMAS"/>
+        <vocab:dbo_SUSITIKIMAS_fk_ASMUOid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/ASMUO/6"/>
+        <vocab:dbo_SUSITIKIMAS_fk_GYVUNASid_GYVUNAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</vocab:dbo_SUSITIKIMAS_fk_GYVUNASid_GYVUNAS>
+        <vocab:dbo_SUSITIKIMAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/5"/>
+        <vocab:dbo_SUSITIKIMAS_id_SUSITIKIMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</vocab:dbo_SUSITIKIMAS_id_SUSITIKIMAS>
+        <vocab:dbo_SUSITIKIMAS_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-10</vocab:dbo_SUSITIKIMAS_sukurimo_data>
+        <vocab:dbo_SUSITIKIMAS_susitikimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</vocab:dbo_SUSITIKIMAS_susitikimo_data>
+        <rdfs:label>SUSITIKIMAS #4</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/SUSITIKIMAS/5 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/5">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_SUSITIKIMAS"/>
+        <vocab:dbo_SUSITIKIMAS_fk_ASMUOid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/ASMUO/8"/>
+        <vocab:dbo_SUSITIKIMAS_fk_GYVUNASid_GYVUNAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</vocab:dbo_SUSITIKIMAS_fk_GYVUNASid_GYVUNAS>
+        <vocab:dbo_SUSITIKIMAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/1"/>
+        <vocab:dbo_SUSITIKIMAS_id_SUSITIKIMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</vocab:dbo_SUSITIKIMAS_id_SUSITIKIMAS>
+        <vocab:dbo_SUSITIKIMAS_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-10</vocab:dbo_SUSITIKIMAS_sukurimo_data>
+        <vocab:dbo_SUSITIKIMAS_susitikimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</vocab:dbo_SUSITIKIMAS_susitikimo_data>
+        <rdfs:label>SUSITIKIMAS #5</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/SUSITIKIMAS/6 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/6">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_SUSITIKIMAS"/>
+        <vocab:dbo_SUSITIKIMAS_fk_ASMUOid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/ASMUO/8"/>
+        <vocab:dbo_SUSITIKIMAS_fk_GYVUNASid_GYVUNAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</vocab:dbo_SUSITIKIMAS_fk_GYVUNASid_GYVUNAS>
+        <vocab:dbo_SUSITIKIMAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/1"/>
+        <vocab:dbo_SUSITIKIMAS_id_SUSITIKIMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</vocab:dbo_SUSITIKIMAS_id_SUSITIKIMAS>
+        <vocab:dbo_SUSITIKIMAS_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-10</vocab:dbo_SUSITIKIMAS_sukurimo_data>
+        <vocab:dbo_SUSITIKIMAS_susitikimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</vocab:dbo_SUSITIKIMAS_susitikimo_data>
+        <rdfs:label>SUSITIKIMAS #6</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/SUSITIKIMAS/7 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/7">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_SUSITIKIMAS"/>
+        <vocab:dbo_SUSITIKIMAS_fk_ASMUOid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/ASMUO/8"/>
+        <vocab:dbo_SUSITIKIMAS_fk_GYVUNASid_GYVUNAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</vocab:dbo_SUSITIKIMAS_fk_GYVUNASid_GYVUNAS>
+        <vocab:dbo_SUSITIKIMAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/1"/>
+        <vocab:dbo_SUSITIKIMAS_id_SUSITIKIMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</vocab:dbo_SUSITIKIMAS_id_SUSITIKIMAS>
+        <vocab:dbo_SUSITIKIMAS_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-10</vocab:dbo_SUSITIKIMAS_sukurimo_data>
+        <vocab:dbo_SUSITIKIMAS_susitikimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</vocab:dbo_SUSITIKIMAS_susitikimo_data>
+        <rdfs:label>SUSITIKIMAS #7</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/SUSITIKIMAS/8 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/8">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_SUSITIKIMAS"/>
+        <vocab:dbo_SUSITIKIMAS_fk_ASMUOid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/ASMUO/8"/>
+        <vocab:dbo_SUSITIKIMAS_fk_GYVUNASid_GYVUNAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</vocab:dbo_SUSITIKIMAS_fk_GYVUNASid_GYVUNAS>
+        <vocab:dbo_SUSITIKIMAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/2"/>
+        <vocab:dbo_SUSITIKIMAS_id_SUSITIKIMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</vocab:dbo_SUSITIKIMAS_id_SUSITIKIMAS>
+        <vocab:dbo_SUSITIKIMAS_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-10</vocab:dbo_SUSITIKIMAS_sukurimo_data>
+        <vocab:dbo_SUSITIKIMAS_susitikimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</vocab:dbo_SUSITIKIMAS_susitikimo_data>
+        <rdfs:label>SUSITIKIMAS #8</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/SUSITIKIMAS/9 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/9">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_SUSITIKIMAS"/>
+        <vocab:dbo_SUSITIKIMAS_fk_ASMUOid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/ASMUO/10"/>
+        <vocab:dbo_SUSITIKIMAS_fk_GYVUNASid_GYVUNAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</vocab:dbo_SUSITIKIMAS_fk_GYVUNASid_GYVUNAS>
+        <vocab:dbo_SUSITIKIMAS_fk_PRIEGLAUDAid_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/4"/>
+        <vocab:dbo_SUSITIKIMAS_id_SUSITIKIMAS rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</vocab:dbo_SUSITIKIMAS_id_SUSITIKIMAS>
+        <vocab:dbo_SUSITIKIMAS_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-10</vocab:dbo_SUSITIKIMAS_sukurimo_data>
+        <vocab:dbo_SUSITIKIMAS_susitikimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</vocab:dbo_SUSITIKIMAS_susitikimo_data>
+        <rdfs:label>SUSITIKIMAS #9</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/SUTARTIS/2 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/SUTARTIS/2">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_SUTARTIS"/>
+        <vocab:dbo_SUTARTIS_busena>patvirtintas  </vocab:dbo_SUTARTIS_busena>
+        <vocab:dbo_SUTARTIS_id_DOKUMENTAS rdf:resource="http://localhost:2020/resource/dbo/DOKUMENTAS/2"/>
+        <vocab:dbo_SUTARTIS_pasirasymo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-20</vocab:dbo_SUTARTIS_pasirasymo_data>
+        <rdfs:label>SUTARTIS #2</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/SUTARTIS/4 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/SUTARTIS/4">
+        <rdf:type rdf:resource="http://localhost:2020/resource/vocab/dbo_SUTARTIS"/>
+        <vocab:dbo_SUTARTIS_busena>patvirtintas  </vocab:dbo_SUTARTIS_busena>
+        <vocab:dbo_SUTARTIS_id_DOKUMENTAS rdf:resource="http://localhost:2020/resource/dbo/DOKUMENTAS/4"/>
+        <vocab:dbo_SUTARTIS_pasirasymo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-20</vocab:dbo_SUTARTIS_pasirasymo_data>
+        <rdfs:label>SUTARTIS #4</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://localhost:2020/resource/dbo/ASMUO/1">
+        <vocab:dbo_ASMUO_id_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/NAUDOTOJAS/1"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:2020/resource/dbo/ASMUO/2">
+        <vocab:dbo_ASMUO_id_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/NAUDOTOJAS/2"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:2020/resource/dbo/ASMUO/3">
+        <vocab:dbo_ASMUO_id_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/NAUDOTOJAS/3"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:2020/resource/dbo/ASMUO/4">
+        <vocab:dbo_ASMUO_id_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/NAUDOTOJAS/4"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://localhost:2020/resource/dbo/ASMUO/5">
+        <vocab:dbo_ASMUO_id_NAUDOTOJAS rdf:resource="http://localhost:2020/resource/dbo/NAUDOTOJAS/5"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/1"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/10"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/11"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/12"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/13"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/14"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/15"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/2"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/3"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/4"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/5"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/6"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/7"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/8"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/9"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/ASMENS_PATIKRINIMAS/1"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/ASMENS_PATIKRINIMAS/2"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/ASMENS_PATIKRINIMAS/3"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/ASMENS_PATIKRINIMAS/4"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/ASMENS_PATIKRINIMAS/5"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/ASMUO/10"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/ASMUO/6"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/ASMUO/7"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/ASMUO/8"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/ASMUO/9"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/DOKUMENTAS/1"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/DOKUMENTAS/2"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/DOKUMENTAS/3"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/DOKUMENTAS/4"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/DOKUMENTAS/5"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/DOKUMENTAS/6"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/DOKUMENTAS/7"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/GRAZINIMAS/1"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/1"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/10"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/11"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/12"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/13"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/14"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/15"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/2"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/3"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/4"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/5"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/6"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/7"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/8"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/9"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/1"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/10"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/2"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/3"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/4"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/5"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/6"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/7"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/8"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/9"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/PRASYMAS/1"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/PRASYMAS/3"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/PRASYMAS/6"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/PRASYMAS/7"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/PRIEGLAUDA/1"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/PRIEGLAUDA/2"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/PRIEGLAUDA/3"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/PRIEGLAUDA/4"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/PRIEGLAUDA/5"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/1"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/10"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/2"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/3"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/4"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/5"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/6"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/7"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/8"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/9"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/SUTARTIS/2"/>
+            <rdf:Description rdf:about="http://localhost:2020/resource/dbo/SUTARTIS/4"/>
+        </distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,60 @@
+----------- NEVEIKIANTYS
+generate-mapping -o mapping.ttl -d com.microsoft.sqlserver.jdbc.SQLServerDriver jdbc:sqlserver://SQLEXPRESS/DuomenuSemantiniaiModeliai
+
+generate-mapping -o mapping.ttl -d com.microsoft.sqlserver.jdbc.SQLServerDriver jdbc:sqlserver://DESTROYER-XI\SQLEXPRESS/DuomenuSemantiniaiModeliai
+
+generate-mapping -o mapping.ttl -d com.microsoft.sqlserver.jdbc.SQLServerDriver jdbc:sqlserver://DESTROYER-XI\SQLEXPRESS:1433;databaseName=DuomenuSemantiniaiModeliai
+
+generate-mapping -o mapping.ttl -d com.microsoft.sqlserver.jdbc.SQLServerDriver  -u sa2 -p 1234 jdbc:sqlserver://DESTROYER-XI/SQLEXPRESS:1433;databaseName=DuomenuSemantiniaiModeliai;encrypt=true;trustServerCertificate=true;
+----------- NEVEIKIANTYS ^^^^^^
+Install Java
+
+Download icu4j-75.1.jar from https://github.com/unicode-org/icu/releases/tag/release-75-1
+
+Replace d2rq\d2rq-0.8.1\lib\arq-2.9\icu4j-3.4.4.jar with icu4j-75.1.jar
+
+Download Microsoft JDBC Driver for SQL Server from - https://learn.microsoft.com/en-us/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server?view=sql-server-ver16
+
+Place mssql-jdbc-12.6.1.jre8.jar into d2rq\d2rq-0.8.1\lib\
+
+cd\
+D:
+cd D:\KTU_Magistras\Duomenu_Semantiniai_Modeliai\LAB_3\d2rq\d2rq-0.8.1
+
+Sql Server Configuration Manager -> SQL Server Network Configuration -> Right click on protocols for SQLEXPRESS
+	-> Open -> TCP/IP -> Right click -> Properties
+		-> Listen all = Yes -> Ip Adresses tab, scroll down to the bottom, set TCP Dynamic Ports to 1433
+			-> Apply -> Open Sql Server Services -> restart Sql Server
+			
+
+MSSMS -> right click on your server -> Security -> mark Sql Server and Windows authentication mode
+	-> restart Sql Server via Sql Server Configuration Manager again
+	
+Open your Server via MSSMS -> Security -> Logins -> Create a new one with all permissions
+
+generate-mapping -o mapping.ttl -d com.microsoft.sqlserver.jdbc.SQLServerDriver  -u sa2 -p 1234 jdbc:sqlserver://DESTROYER-XI\SQLEXPRESS:1433;databaseName=DuomenuSemantiniaiModeliai;encrypt=true;trustServerCertificate=true; <--- veikiantis
+
+mappinge: d2rq:jdbcDSN "jdbc:sqlserver://DESTROYER-XI//SQLEXPRESS:1433;databaseName=DuomenuSemantiniaiModeliai;encrypt=true;trustServerCertificate=true;";
+
+-- kill any apps using 2020 PORT with TCPView tool - (can be downloaded from https://learn.microsoft.com/en-us/sysinternals/downloads/tcpview)
+
+d2r-server mapping.ttl -> d2r-server mapping_gyvuneliu_priglaudimas_pakoreguotas.ttl
+d2r-server mapping_gyvuneliu_priglaudimas_pakoreguotas_lab_3_id_bandymai.ttl
+
+http://localhost:2020/
+
+dump-rdf -f RDF/XML -o gyvuneliu_priglaudimas.rdf -b http://localhost:2020/resource/ mapping.ttl 
+
+dump-rdf -f RDF/XML -o dump_is_koreguoto_mappingo_gyvuneliu_priglaudimas.rdf -b http://localhost:2020/resource/ mapping_gyvuneliu_priglaudimas_pakoreguotas.ttl
+
+dump-rdf -f RDF/XML -o dump_su_id_bandymas.rdf -b http://localhost:2020/resource/ mapping_gyvuneliu_priglaudimas_pakoreguotas_lab_3_id_bandymai.ttl
+
+
+Iš mappingo išmečiau:
+	-class definition labels
+	-property definition labels
+	-keičiau class vocab visur
+	-keičiau property vocab visur
+	-ištryniau nesąmoningus labels
+	-foreign keys -> object properties
+	

@@ -1,0 +1,129 @@
+--@(#) script.ddl
+
+CREATE TABLE NAUDOTOJAS
+(
+	adresas varchar (500) NOT NULL,
+	elektroninis_pastas varchar (200) NOT NULL,
+	telefono_numeris varchar (16) NOT NULL,
+	registracijos_data date NOT NULL,
+	naudotojo_tipas char (10) NOT NULL,
+	id_NAUDOTOJAS integer NOT NULL,
+	CHECK(naudotojo_tipas in ('prieglauda', 'asmuo')),
+	PRIMARY KEY(id_NAUDOTOJAS)
+);
+
+CREATE TABLE PRIEGLAUDA
+(
+	pavadinimas varchar (200) NOT NULL,
+	imones_kodas varchar (30) NULL,
+	id_NAUDOTOJAS integer NOT NULL,
+	PRIMARY KEY(id_NAUDOTOJAS),
+	FOREIGN KEY(id_NAUDOTOJAS) REFERENCES NAUDOTOJAS (id_NAUDOTOJAS)
+);
+
+CREATE TABLE ASMUO
+(
+	vardas varchar (200) NOT NULL,
+	pavarde varchar (200) NOT NULL,
+	gimimo_data date NOT NULL,
+	asmens_kodas varchar (11) NOT NULL,
+	id_NAUDOTOJAS integer NOT NULL,
+	PRIMARY KEY(id_NAUDOTOJAS),
+	FOREIGN KEY(id_NAUDOTOJAS) REFERENCES NAUDOTOJAS (id_NAUDOTOJAS)
+);
+
+CREATE TABLE GYVUNAS
+(
+	vardas varchar (200) NOT NULL,
+	veisle varchar (200) NULL,
+	gimimo_data date NOT NULL,
+	rusis char (11) NOT NULL,
+	gyvno_dydzio_kategorija char (3) NOT NULL,
+	id_GYVUNAS integer NOT NULL,
+	fk_PRIEGLAUDAid_NAUDOTOJAS integer NOT NULL,
+	CHECK(rusis in ('kate', 'suo', 'paukstis', 'roplys', 'varliagyvis', 'grauzikas')),
+	CHECK(gyvno_dydzio_kategorija in ('S', 'M', 'L', 'XL', 'XXL')),
+	PRIMARY KEY(id_GYVUNAS),
+	CONSTRAINT turi FOREIGN KEY(fk_PRIEGLAUDAid_NAUDOTOJAS) REFERENCES PRIEGLAUDA (id_NAUDOTOJAS)
+);
+
+CREATE TABLE ASMENS_PATIKRINIMAS
+(
+	data date NOT NULL,
+	tinkamumas boolean NOT NULL,
+	aprasymas varchar (2000) NOT NULL,
+	id_ASMENS_PATIKRINIMAS integer NOT NULL,
+	fk_ASMUOid_NAUDOTOJAS integer NOT NULL,
+	fk_PRIEGLAUDAid_NAUDOTOJAS integer NOT NULL,
+	PRIMARY KEY(id_ASMENS_PATIKRINIMAS),
+	UNIQUE(fk_ASMUOid_NAUDOTOJAS),
+	CONSTRAINT turi FOREIGN KEY(fk_ASMUOid_NAUDOTOJAS) REFERENCES ASMUO (id_NAUDOTOJAS),
+	CONSTRAINT atlieka FOREIGN KEY(fk_PRIEGLAUDAid_NAUDOTOJAS) REFERENCES PRIEGLAUDA (id_NAUDOTOJAS)
+);
+
+CREATE TABLE APRASYMAS
+(
+	tekstas varchar (2000) NOT NULL,
+	id_APRASYMAS integer NOT NULL,
+	fk_GYVUNASid_GYVUNAS integer NOT NULL,
+	PRIMARY KEY(id_APRASYMAS),
+	UNIQUE(fk_GYVUNASid_GYVUNAS),
+	CONSTRAINT turi FOREIGN KEY(fk_GYVUNASid_GYVUNAS) REFERENCES GYVUNAS (id_GYVUNAS)
+);
+
+CREATE TABLE DOKUMENTAS
+(
+	sukurimo_data date NOT NULL,
+	tekstas varchar (2000) NOT NULL,
+	dokumento_tipas char (10) NOT NULL,
+	id_DOKUMENTAS integer NOT NULL,
+	fk_GYVUNASid_GYVUNAS integer NOT NULL,
+	fk_PRIEGLAUDAid_NAUDOTOJAS integer NOT NULL,
+	fk_ASMUOid_NAUDOTOJAS integer NOT NULL,
+	CHECK(dokumento_tipas in ('sutartis', 'prasymas', 'grazinimas')),
+	PRIMARY KEY(id_DOKUMENTAS),
+	CONSTRAINT dalyvauja FOREIGN KEY(fk_GYVUNASid_GYVUNAS) REFERENCES GYVUNAS (id_GYVUNAS),
+	CONSTRAINT keicia busena FOREIGN KEY(fk_PRIEGLAUDAid_NAUDOTOJAS) REFERENCES PRIEGLAUDA (id_NAUDOTOJAS),
+	CONSTRAINT pildo FOREIGN KEY(fk_ASMUOid_NAUDOTOJAS) REFERENCES ASMUO (id_NAUDOTOJAS)
+);
+
+CREATE TABLE SUSITIKIMAS
+(
+	sukurimo_data date NOT NULL,
+	susitikimo_data date NOT NULL,
+	id_SUSITIKIMAS integer NOT NULL,
+	fk_ASMUOid_NAUDOTOJAS integer NOT NULL,
+	fk_PRIEGLAUDAid_NAUDOTOJAS integer NOT NULL,
+	fk_GYVUNASid_GYVUNAS integer NOT NULL,
+	PRIMARY KEY(id_SUSITIKIMAS),
+	UNIQUE(fk_GYVUNASid_GYVUNAS),
+	CONSTRAINT dalyvauja FOREIGN KEY(fk_ASMUOid_NAUDOTOJAS) REFERENCES ASMUO (id_NAUDOTOJAS),
+	CONSTRAINT organizuoja FOREIGN KEY(fk_PRIEGLAUDAid_NAUDOTOJAS) REFERENCES PRIEGLAUDA (id_NAUDOTOJAS)
+);
+
+CREATE TABLE PRASYMAS
+(
+	busena char (14) NOT NULL,
+	id_DOKUMENTAS integer NOT NULL,
+	CHECK(busena in ('uzregistruotas', 'patvirtintas', 'atmestas')),
+	PRIMARY KEY(id_DOKUMENTAS),
+	FOREIGN KEY(id_DOKUMENTAS) REFERENCES DOKUMENTAS (id_DOKUMENTAS)
+);
+
+CREATE TABLE SUTARTIS
+(
+	pasirasymo_data date NOT NULL,
+	busena char (14) NOT NULL,
+	id_DOKUMENTAS integer NOT NULL,
+	CHECK(busena in ('uzregistruotas', 'patvirtintas', 'atmestas')),
+	PRIMARY KEY(id_DOKUMENTAS),
+	FOREIGN KEY(id_DOKUMENTAS) REFERENCES DOKUMENTAS (id_DOKUMENTAS)
+);
+
+CREATE TABLE GRAZINIMAS
+(
+	grazinimo_data date NOT NULL,
+	id_DOKUMENTAS integer NOT NULL,
+	PRIMARY KEY(id_DOKUMENTAS),
+	FOREIGN KEY(id_DOKUMENTAS) REFERENCES DOKUMENTAS (id_DOKUMENTAS)
+);

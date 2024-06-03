@@ -1,0 +1,1350 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:db="http://localhost:2020/resource/"
+     xmlns:map="http://localhost:2020/resource/#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vocab="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#">
+    <Ontology>
+        <imports rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2"/>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#gauna_pakeitimus_is_prieglaudos -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#gauna_pakeitimus_is_prieglaudos"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#gautas_is_prieglaudos -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#gautas_is_prieglaudos"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#gyvena_prieglaudoje -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#gyvena_prieglaudoje"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#organizuoja_susitikima -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#organizuoja_susitikima"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#organizuojamas_asmeniui -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#organizuojamas_asmeniui"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#organizuojamas_prieglaudoje -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#organizuojamas_prieglaudoje"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#patikrina_asmeni -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#patikrina_asmeni"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pildomas_asmens -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pildomas_asmens"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pridetas_gyvunas -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pridetas_gyvunas"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#priklauso_gyvunui -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#priklauso_gyvunui"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#rodomas_gyvunas -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#rodomas_gyvunas"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_adresa -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_adresa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_aprasymo_teksta -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_aprasymo_teksta"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_asmens_koda -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_asmens_koda"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_busena -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_busena"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_data -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_data"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_elektronini_pasta -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_elektronini_pasta"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_gimimo_data -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_gimimo_data"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_grazinimo_data -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_grazinimo_data"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_gyvuno_dydzio_kategorija -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_gyvuno_dydzio_kategorija"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_imones_koda -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_imones_koda"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_pasirasymo_data -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_pasirasymo_data"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_pavadinima -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_pavadinima"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_pavarde -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_pavarde"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_rusi -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_rusi"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_sukurimo_data -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_sukurimo_data"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_susitikimo_data -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_susitikimo_data"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_teksta -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_teksta"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_telefono_numeri -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_telefono_numeri"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_tinkamuma -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_tinkamuma"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_varda -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_varda"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_veisle -->
+
+    <AnnotationProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_veisle"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmens_patikrinimas -->
+
+    <Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmens_patikrinimas"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmuo -->
+
+    <Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmuo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Dokumentas -->
+
+    <Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Dokumentas"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Grazinimas -->
+
+    <Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Grazinimas"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas -->
+
+    <Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvuno_aprasymas -->
+
+    <Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvuno_aprasymas"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Naudotojas -->
+
+    <Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Naudotojas"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prasymas -->
+
+    <Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prasymas"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prieglauda -->
+
+    <Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prieglauda"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas -->
+
+    <Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Sutartis -->
+
+    <Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Sutartis"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/1 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvuno_aprasymas"/>
+        <vocab:priklauso_gyvunui rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/1"/>
+        <vocab:turi_aprasymo_teksta>Labai saugantis suniukas ieskantis namu.</vocab:turi_aprasymo_teksta>
+        <rdfs:label>APRASYMAS #1</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/10 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvuno_aprasymas"/>
+        <vocab:priklauso_gyvunui rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/10"/>
+        <vocab:turi_aprasymo_teksta>Ieskomi namai viska valganciam driezui.</vocab:turi_aprasymo_teksta>
+        <rdfs:label>APRASYMAS #10</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/11 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvuno_aprasymas"/>
+        <vocab:priklauso_gyvunui rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/11"/>
+        <vocab:turi_aprasymo_teksta>Mazasis ziurkenas iesko kitos vietos savo narveliui.</vocab:turi_aprasymo_teksta>
+        <rdfs:label>APRASYMAS #11</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/12 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvuno_aprasymas"/>
+        <vocab:priklauso_gyvunui rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/12"/>
+        <vocab:turi_aprasymo_teksta>Muses valganti draugiska varle iesko varliagyvius megstanciu zmoniu.</vocab:turi_aprasymo_teksta>
+        <rdfs:label>APRASYMAS #12</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/13 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvuno_aprasymas"/>
+        <vocab:priklauso_gyvunui rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/13"/>
+        <vocab:turi_aprasymo_teksta>Nulepause miela katyte iesko siltu namu.</vocab:turi_aprasymo_teksta>
+        <rdfs:label>APRASYMAS #13</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/14 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvuno_aprasymas"/>
+        <vocab:priklauso_gyvunui rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/14"/>
+        <vocab:turi_aprasymo_teksta>Isdidinga ir charakteri turinti medziotoja iesko supratingo seimininko.</vocab:turi_aprasymo_teksta>
+        <rdfs:label>APRASYMAS #14</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/15 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvuno_aprasymas"/>
+        <vocab:priklauso_gyvunui rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/15"/>
+        <vocab:turi_aprasymo_teksta>Mazoji kaledu senelio padejeja iesko namu.</vocab:turi_aprasymo_teksta>
+        <rdfs:label>APRASYMAS #15</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/2 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvuno_aprasymas"/>
+        <vocab:priklauso_gyvunui rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/2"/>
+        <vocab:turi_aprasymo_teksta>Griezto charakterio suniukas iesko seimininko.</vocab:turi_aprasymo_teksta>
+        <rdfs:label>APRASYMAS #2</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/3 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvuno_aprasymas"/>
+        <vocab:priklauso_gyvunui rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/3"/>
+        <vocab:turi_aprasymo_teksta>Labai draugiskas ir svelnus buldogas iesko siltu namu.</vocab:turi_aprasymo_teksta>
+        <rdfs:label>APRASYMAS #3</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/4 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvuno_aprasymas"/>
+        <vocab:priklauso_gyvunui rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/4"/>
+        <vocab:turi_aprasymo_teksta>Draugiskas ir meilus suniukas iesko mylincios seimos.</vocab:turi_aprasymo_teksta>
+        <rdfs:label>APRASYMAS #4</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/5 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvuno_aprasymas"/>
+        <vocab:priklauso_gyvunui rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/5"/>
+        <vocab:turi_aprasymo_teksta>Mazasis padukelis su daug energijos iesko seimininko.</vocab:turi_aprasymo_teksta>
+        <rdfs:label>APRASYMAS #5</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/6 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvuno_aprasymas"/>
+        <vocab:priklauso_gyvunui rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/6"/>
+        <vocab:turi_aprasymo_teksta>Draugiskas giesmininkas iesko nauju namu.</vocab:turi_aprasymo_teksta>
+        <rdfs:label>APRASYMAS #6</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/7 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvuno_aprasymas"/>
+        <vocab:priklauso_gyvunui rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/7"/>
+        <vocab:turi_aprasymo_teksta>Meili ir draugiska katyte iesko nauju namu.</vocab:turi_aprasymo_teksta>
+        <rdfs:label>APRASYMAS #7</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/8 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvuno_aprasymas"/>
+        <vocab:priklauso_gyvunui rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/8"/>
+        <vocab:turi_aprasymo_teksta>Su dideliu charakteriu katinas iesko iskilmingu seimininku.</vocab:turi_aprasymo_teksta>
+        <rdfs:label>APRASYMAS #8</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/APRASYMAS/9 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/APRASYMAS/9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvuno_aprasymas"/>
+        <vocab:priklauso_gyvunui rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/9"/>
+        <vocab:turi_aprasymo_teksta>Mazasis medziotojas su draugisku charackteriu iesko nauju namu.</vocab:turi_aprasymo_teksta>
+        <rdfs:label>APRASYMAS #9</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/ASMENS_PATIKRINIMAS/1 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/ASMENS_PATIKRINIMAS/1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmens_patikrinimas"/>
+        <vocab:gautas_is_prieglaudos rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/2"/>
+        <vocab:patikrina_asmeni rdf:resource="http://localhost:2020/resource/dbo/ASMUO/6"/>
+        <vocab:turi_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-10</vocab:turi_data>
+        <vocab:turi_teksta>Asmuo tinkantis gyvunu priglaudimui.</vocab:turi_teksta>
+        <vocab:turi_tinkamuma>1</vocab:turi_tinkamuma>
+        <rdfs:label>ASMENS_PATIKRINIMAS #1</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/ASMENS_PATIKRINIMAS/2 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/ASMENS_PATIKRINIMAS/2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmens_patikrinimas"/>
+        <vocab:gautas_is_prieglaudos rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/1"/>
+        <vocab:patikrina_asmeni rdf:resource="http://localhost:2020/resource/dbo/ASMUO/7"/>
+        <vocab:turi_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-28</vocab:turi_data>
+        <vocab:turi_teksta>Asmuo netinkantis gyvunu priglaudimui. Asmuo dar nesulaukes pilnametystes.</vocab:turi_teksta>
+        <vocab:turi_tinkamuma>0</vocab:turi_tinkamuma>
+        <rdfs:label>ASMENS_PATIKRINIMAS #2</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/ASMENS_PATIKRINIMAS/3 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/ASMENS_PATIKRINIMAS/3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmens_patikrinimas"/>
+        <vocab:gautas_is_prieglaudos rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/3"/>
+        <vocab:patikrina_asmeni rdf:resource="http://localhost:2020/resource/dbo/ASMUO/8"/>
+        <vocab:turi_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-12</vocab:turi_data>
+        <vocab:turi_teksta>Asmuo tinkantis gyvunu priglaudimui.</vocab:turi_teksta>
+        <vocab:turi_tinkamuma>1</vocab:turi_tinkamuma>
+        <rdfs:label>ASMENS_PATIKRINIMAS #3</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/ASMENS_PATIKRINIMAS/4 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/ASMENS_PATIKRINIMAS/4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmens_patikrinimas"/>
+        <vocab:gautas_is_prieglaudos rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/5"/>
+        <vocab:patikrina_asmeni rdf:resource="http://localhost:2020/resource/dbo/ASMUO/9"/>
+        <vocab:turi_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-28</vocab:turi_data>
+        <vocab:turi_teksta>Asmuo netinkantis gyvunu priglaudimui. Asmuo yra padares nusizengimu ar nusikaltimu pries gyvunus.</vocab:turi_teksta>
+        <vocab:turi_tinkamuma>0</vocab:turi_tinkamuma>
+        <rdfs:label>ASMENS_PATIKRINIMAS #4</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/ASMENS_PATIKRINIMAS/5 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/ASMENS_PATIKRINIMAS/5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmens_patikrinimas"/>
+        <vocab:gautas_is_prieglaudos rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/4"/>
+        <vocab:patikrina_asmeni rdf:resource="http://localhost:2020/resource/dbo/ASMUO/10"/>
+        <vocab:turi_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-14</vocab:turi_data>
+        <vocab:turi_teksta>Asmuo tinkantis gyvunu priglaudimui.</vocab:turi_teksta>
+        <vocab:turi_tinkamuma>1</vocab:turi_tinkamuma>
+        <rdfs:label>ASMENS_PATIKRINIMAS #5</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/ASMUO/10 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/ASMUO/10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmuo"/>
+        <vocab:turi_asmens_koda>47669665856</vocab:turi_asmens_koda>
+        <vocab:turi_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-06-02</vocab:turi_gimimo_data>
+        <vocab:turi_pavarde>Murmantas</vocab:turi_pavarde>
+        <vocab:turi_varda>Mantas</vocab:turi_varda>
+        <rdfs:label>ASMUO #10</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/ASMUO/6 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/ASMUO/6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmuo"/>
+        <vocab:turi_asmens_koda>47852214856</vocab:turi_asmens_koda>
+        <vocab:turi_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1997-02-02</vocab:turi_gimimo_data>
+        <vocab:turi_pavarde>Stulginskis</vocab:turi_pavarde>
+        <vocab:turi_varda>Jonas</vocab:turi_varda>
+        <rdfs:label>ASMUO #6</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/ASMUO/7 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/ASMUO/7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmuo"/>
+        <vocab:turi_asmens_koda>47854156456</vocab:turi_asmens_koda>
+        <vocab:turi_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2007-02-22</vocab:turi_gimimo_data>
+        <vocab:turi_pavarde>Butautas</vocab:turi_pavarde>
+        <vocab:turi_varda>Mantas</vocab:turi_varda>
+        <rdfs:label>ASMUO #7</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/ASMUO/8 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/ASMUO/8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmuo"/>
+        <vocab:turi_asmens_koda>47852214856</vocab:turi_asmens_koda>
+        <vocab:turi_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1991-07-02</vocab:turi_gimimo_data>
+        <vocab:turi_pavarde>Kevalaitis</vocab:turi_pavarde>
+        <vocab:turi_varda>Kevinas</vocab:turi_varda>
+        <rdfs:label>ASMUO #8</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/ASMUO/9 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/ASMUO/9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmuo"/>
+        <vocab:turi_asmens_koda>47877777777</vocab:turi_asmens_koda>
+        <vocab:turi_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-02-12</vocab:turi_gimimo_data>
+        <vocab:turi_pavarde>Askanius</vocab:turi_pavarde>
+        <vocab:turi_varda>Algis</vocab:turi_varda>
+        <rdfs:label>ASMUO #9</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/DOKUMENTAS/1 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/DOKUMENTAS/1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Dokumentas"/>
+        <vocab:gauna_pakeitimus_is_prieglaudos rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/3"/>
+        <vocab:pildomas_asmens rdf:resource="http://localhost:2020/resource/dbo/ASMUO/6"/>
+        <vocab:pridetas_gyvunas rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/8"/>
+        <vocab:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-19</vocab:turi_sukurimo_data>
+        <vocab:turi_teksta>Prasymas priimti gyvuna globai.</vocab:turi_teksta>
+        <rdfs:label>DOKUMENTAS #1</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/DOKUMENTAS/2 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/DOKUMENTAS/2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Dokumentas"/>
+        <vocab:gauna_pakeitimus_is_prieglaudos rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/3"/>
+        <vocab:pildomas_asmens rdf:resource="http://localhost:2020/resource/dbo/ASMUO/6"/>
+        <vocab:pridetas_gyvunas rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/8"/>
+        <vocab:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-20</vocab:turi_sukurimo_data>
+        <vocab:turi_teksta>Gyvuno globos sutartis.</vocab:turi_teksta>
+        <rdfs:label>DOKUMENTAS #2</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/DOKUMENTAS/3 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/DOKUMENTAS/3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Dokumentas"/>
+        <vocab:gauna_pakeitimus_is_prieglaudos rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/4"/>
+        <vocab:pildomas_asmens rdf:resource="http://localhost:2020/resource/dbo/ASMUO/10"/>
+        <vocab:pridetas_gyvunas rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/12"/>
+        <vocab:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-19</vocab:turi_sukurimo_data>
+        <vocab:turi_teksta>Prasymas priimti gyvuna globai.</vocab:turi_teksta>
+        <rdfs:label>DOKUMENTAS #3</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/DOKUMENTAS/4 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/DOKUMENTAS/4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Dokumentas"/>
+        <vocab:gauna_pakeitimus_is_prieglaudos rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/4"/>
+        <vocab:pildomas_asmens rdf:resource="http://localhost:2020/resource/dbo/ASMUO/10"/>
+        <vocab:pridetas_gyvunas rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/12"/>
+        <vocab:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-20</vocab:turi_sukurimo_data>
+        <vocab:turi_teksta>Gyvuno globos sutartis.</vocab:turi_teksta>
+        <rdfs:label>DOKUMENTAS #4</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/DOKUMENTAS/5 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/DOKUMENTAS/5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Dokumentas"/>
+        <vocab:gauna_pakeitimus_is_prieglaudos rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/4"/>
+        <vocab:pildomas_asmens rdf:resource="http://localhost:2020/resource/dbo/ASMUO/10"/>
+        <vocab:pridetas_gyvunas rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/12"/>
+        <vocab:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-28</vocab:turi_sukurimo_data>
+        <vocab:turi_teksta>Gyvuno grazinimas.</vocab:turi_teksta>
+        <rdfs:label>DOKUMENTAS #5</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/DOKUMENTAS/6 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/DOKUMENTAS/6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Dokumentas"/>
+        <vocab:gauna_pakeitimus_is_prieglaudos rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/1"/>
+        <vocab:pildomas_asmens rdf:resource="http://localhost:2020/resource/dbo/ASMUO/7"/>
+        <vocab:pridetas_gyvunas rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/3"/>
+        <vocab:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-28</vocab:turi_sukurimo_data>
+        <vocab:turi_teksta>Prasymas priimti gyvuna globai.</vocab:turi_teksta>
+        <rdfs:label>DOKUMENTAS #6</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/DOKUMENTAS/7 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/DOKUMENTAS/7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Dokumentas"/>
+        <vocab:gauna_pakeitimus_is_prieglaudos rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/5"/>
+        <vocab:pildomas_asmens rdf:resource="http://localhost:2020/resource/dbo/ASMUO/9"/>
+        <vocab:pridetas_gyvunas rdf:resource="http://localhost:2020/resource/dbo/GYVUNAS/15"/>
+        <vocab:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-28</vocab:turi_sukurimo_data>
+        <vocab:turi_teksta>Prasymas priimti gyvuna globai.</vocab:turi_teksta>
+        <rdfs:label>DOKUMENTAS #7</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GRAZINIMAS/1 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GRAZINIMAS/1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Grazinimas"/>
+        <vocab:turi_grazinimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-28</vocab:turi_grazinimo_data>
+        <rdfs:label>GRAZINIMAS #1</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/1 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+        <vocab:gyvena_prieglaudoje rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/1"/>
+        <vocab:turi_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-02</vocab:turi_gimimo_data>
+        <vocab:turi_gyvuno_dydzio_kategorija>XL </vocab:turi_gyvuno_dydzio_kategorija>
+        <vocab:turi_rusi>suo        </vocab:turi_rusi>
+        <vocab:turi_varda>Amsius</vocab:turi_varda>
+        <rdfs:label>GYVUNAS #1</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/10 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+        <vocab:gyvena_prieglaudoje rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/4"/>
+        <vocab:turi_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-02-02</vocab:turi_gimimo_data>
+        <vocab:turi_gyvuno_dydzio_kategorija>M  </vocab:turi_gyvuno_dydzio_kategorija>
+        <vocab:turi_rusi>roplys     </vocab:turi_rusi>
+        <vocab:turi_varda>Freda</vocab:turi_varda>
+        <vocab:turi_veisle>Driezas</vocab:turi_veisle>
+        <rdfs:label>GYVUNAS #10</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/11 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+        <vocab:gyvena_prieglaudoje rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/4"/>
+        <vocab:turi_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-07-02</vocab:turi_gimimo_data>
+        <vocab:turi_gyvuno_dydzio_kategorija>S  </vocab:turi_gyvuno_dydzio_kategorija>
+        <vocab:turi_rusi>grauzikas  </vocab:turi_rusi>
+        <vocab:turi_varda>Klaja</vocab:turi_varda>
+        <vocab:turi_veisle>Ziurkenas</vocab:turi_veisle>
+        <rdfs:label>GYVUNAS #11</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/12 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+        <vocab:gyvena_prieglaudoje rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/4"/>
+        <vocab:turi_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-06-02</vocab:turi_gimimo_data>
+        <vocab:turi_gyvuno_dydzio_kategorija>S  </vocab:turi_gyvuno_dydzio_kategorija>
+        <vocab:turi_rusi>varliagyvis</vocab:turi_rusi>
+        <vocab:turi_varda>Strakse</vocab:turi_varda>
+        <vocab:turi_veisle>Varle</vocab:turi_veisle>
+        <rdfs:label>GYVUNAS #12</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/13 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+        <vocab:gyvena_prieglaudoje rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/5"/>
+        <vocab:turi_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-02-02</vocab:turi_gimimo_data>
+        <vocab:turi_gyvuno_dydzio_kategorija>S  </vocab:turi_gyvuno_dydzio_kategorija>
+        <vocab:turi_rusi>kate       </vocab:turi_rusi>
+        <vocab:turi_varda>Bukis</vocab:turi_varda>
+        <vocab:turi_veisle>Nulepause</vocab:turi_veisle>
+        <rdfs:label>GYVUNAS #13</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/14 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+        <vocab:gyvena_prieglaudoje rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/5"/>
+        <vocab:turi_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-02-22</vocab:turi_gimimo_data>
+        <vocab:turi_gyvuno_dydzio_kategorija>S  </vocab:turi_gyvuno_dydzio_kategorija>
+        <vocab:turi_rusi>kate       </vocab:turi_rusi>
+        <vocab:turi_varda>Nima</vocab:turi_varda>
+        <vocab:turi_veisle>Melynoji</vocab:turi_veisle>
+        <rdfs:label>GYVUNAS #14</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/15 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+        <vocab:gyvena_prieglaudoje rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/5"/>
+        <vocab:turi_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-07-02</vocab:turi_gimimo_data>
+        <vocab:turi_gyvuno_dydzio_kategorija>M  </vocab:turi_gyvuno_dydzio_kategorija>
+        <vocab:turi_rusi>kate       </vocab:turi_rusi>
+        <vocab:turi_varda>Santa</vocab:turi_varda>
+        <vocab:turi_veisle>Baltoji</vocab:turi_veisle>
+        <rdfs:label>GYVUNAS #15</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/2 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+        <vocab:gyvena_prieglaudoje rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/1"/>
+        <vocab:turi_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-02-22</vocab:turi_gimimo_data>
+        <vocab:turi_gyvuno_dydzio_kategorija>S  </vocab:turi_gyvuno_dydzio_kategorija>
+        <vocab:turi_rusi>suo        </vocab:turi_rusi>
+        <vocab:turi_varda>Blizgis</vocab:turi_varda>
+        <vocab:turi_veisle>Chihuahua</vocab:turi_veisle>
+        <rdfs:label>GYVUNAS #2</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/3 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+        <vocab:gyvena_prieglaudoje rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/1"/>
+        <vocab:turi_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-02</vocab:turi_gimimo_data>
+        <vocab:turi_gyvuno_dydzio_kategorija>L  </vocab:turi_gyvuno_dydzio_kategorija>
+        <vocab:turi_rusi>suo        </vocab:turi_rusi>
+        <vocab:turi_varda>Mikas</vocab:turi_varda>
+        <vocab:turi_veisle>Buldogas</vocab:turi_veisle>
+        <rdfs:label>GYVUNAS #3</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/4 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+        <vocab:gyvena_prieglaudoje rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/2"/>
+        <vocab:turi_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-02</vocab:turi_gimimo_data>
+        <vocab:turi_gyvuno_dydzio_kategorija>XL </vocab:turi_gyvuno_dydzio_kategorija>
+        <vocab:turi_rusi>suo        </vocab:turi_rusi>
+        <vocab:turi_varda>Binkis</vocab:turi_varda>
+        <vocab:turi_veisle>Dobermanas</vocab:turi_veisle>
+        <rdfs:label>GYVUNAS #4</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/5 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+        <vocab:gyvena_prieglaudoje rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/2"/>
+        <vocab:turi_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-02-12</vocab:turi_gimimo_data>
+        <vocab:turi_gyvuno_dydzio_kategorija>S  </vocab:turi_gyvuno_dydzio_kategorija>
+        <vocab:turi_rusi>grauzikas  </vocab:turi_rusi>
+        <vocab:turi_varda>Kudlius</vocab:turi_varda>
+        <vocab:turi_veisle>Degutis</vocab:turi_veisle>
+        <rdfs:label>GYVUNAS #5</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/6 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+        <vocab:gyvena_prieglaudoje rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/2"/>
+        <vocab:turi_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-06-02</vocab:turi_gimimo_data>
+        <vocab:turi_gyvuno_dydzio_kategorija>S  </vocab:turi_gyvuno_dydzio_kategorija>
+        <vocab:turi_rusi>paukstis   </vocab:turi_rusi>
+        <vocab:turi_varda>Smiltis</vocab:turi_varda>
+        <vocab:turi_veisle>Papuga</vocab:turi_veisle>
+        <rdfs:label>GYVUNAS #6</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/7 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+        <vocab:gyvena_prieglaudoje rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/3"/>
+        <vocab:turi_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-02-02</vocab:turi_gimimo_data>
+        <vocab:turi_gyvuno_dydzio_kategorija>M  </vocab:turi_gyvuno_dydzio_kategorija>
+        <vocab:turi_rusi>kate       </vocab:turi_rusi>
+        <vocab:turi_varda>Spaikas</vocab:turi_varda>
+        <rdfs:label>GYVUNAS #7</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/8 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+        <vocab:gyvena_prieglaudoje rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/3"/>
+        <vocab:turi_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-02-22</vocab:turi_gimimo_data>
+        <vocab:turi_gyvuno_dydzio_kategorija>M  </vocab:turi_gyvuno_dydzio_kategorija>
+        <vocab:turi_rusi>kate       </vocab:turi_rusi>
+        <vocab:turi_varda>Puikis</vocab:turi_varda>
+        <rdfs:label>GYVUNAS #8</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/GYVUNAS/9 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/GYVUNAS/9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+        <vocab:gyvena_prieglaudoje rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/3"/>
+        <vocab:turi_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-07-02</vocab:turi_gimimo_data>
+        <vocab:turi_gyvuno_dydzio_kategorija>L  </vocab:turi_gyvuno_dydzio_kategorija>
+        <vocab:turi_rusi>kate       </vocab:turi_rusi>
+        <vocab:turi_varda>Milkis</vocab:turi_varda>
+        <vocab:turi_veisle>Abisinija</vocab:turi_veisle>
+        <rdfs:label>GYVUNAS #9</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/NAUDOTOJAS/1 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Naudotojas"/>
+        <vocab:turi_adresa>Vasario 16-osios g. 15, Kaunas</vocab:turi_adresa>
+        <vocab:turi_elektronini_pasta>nuaras@gmail.com</vocab:turi_elektronini_pasta>
+        <vocab:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-04-07</vocab:turi_sukurimo_data>
+        <vocab:turi_telefono_numeri>+37054196854</vocab:turi_telefono_numeri>
+        <rdfs:label>NAUDOTOJAS #1</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/NAUDOTOJAS/10 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Naudotojas"/>
+        <vocab:turi_adresa>Vilniaus g. 231, Kaunas</vocab:turi_adresa>
+        <vocab:turi_elektronini_pasta>marmurmantas600@gmail.com</vocab:turi_elektronini_pasta>
+        <vocab:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-15</vocab:turi_sukurimo_data>
+        <vocab:turi_telefono_numeri>+37023477852</vocab:turi_telefono_numeri>
+        <rdfs:label>NAUDOTOJAS #10</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/NAUDOTOJAS/2 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Naudotojas"/>
+        <vocab:turi_adresa>Matulio g. 47, Vilnius</vocab:turi_adresa>
+        <vocab:turi_elektronini_pasta>penktakoja@gmail.com</vocab:turi_elektronini_pasta>
+        <vocab:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-09-09</vocab:turi_sukurimo_data>
+        <vocab:turi_telefono_numeri>+37076785677</vocab:turi_telefono_numeri>
+        <rdfs:label>NAUDOTOJAS #2</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/NAUDOTOJAS/3 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Naudotojas"/>
+        <vocab:turi_adresa>J.Basanaviciaus g. 33, Kaunas</vocab:turi_adresa>
+        <vocab:turi_elektronini_pasta>katinukas@gmail.com</vocab:turi_elektronini_pasta>
+        <vocab:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-01</vocab:turi_sukurimo_data>
+        <vocab:turi_telefono_numeri>+37078567878</vocab:turi_telefono_numeri>
+        <rdfs:label>NAUDOTOJAS #3</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/NAUDOTOJAS/4 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Naudotojas"/>
+        <vocab:turi_adresa>Jonavos g. 231, Kaunas</vocab:turi_adresa>
+        <vocab:turi_elektronini_pasta>sleptuve@gmail.com</vocab:turi_elektronini_pasta>
+        <vocab:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-05-07</vocab:turi_sukurimo_data>
+        <vocab:turi_telefono_numeri>+37023477852</vocab:turi_telefono_numeri>
+        <rdfs:label>NAUDOTOJAS #4</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/NAUDOTOJAS/5 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Naudotojas"/>
+        <vocab:turi_adresa>Arbatos g. 11, Vilnius</vocab:turi_adresa>
+        <vocab:turi_elektronini_pasta>rainiukai@gmail.com</vocab:turi_elektronini_pasta>
+        <vocab:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-10-01</vocab:turi_sukurimo_data>
+        <vocab:turi_telefono_numeri>+37231545345</vocab:turi_telefono_numeri>
+        <rdfs:label>NAUDOTOJAS #5</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/NAUDOTOJAS/6 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Naudotojas"/>
+        <vocab:turi_adresa>Sarkos g. 22, Kaunas</vocab:turi_adresa>
+        <vocab:turi_elektronini_pasta>jonas.stul41@gmail.com</vocab:turi_elektronini_pasta>
+        <vocab:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-11</vocab:turi_sukurimo_data>
+        <vocab:turi_telefono_numeri>+37054196854</vocab:turi_telefono_numeri>
+        <rdfs:label>NAUDOTOJAS #6</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/NAUDOTOJAS/7 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Naudotojas"/>
+        <vocab:turi_adresa>Kipro g. 47, Vilnius</vocab:turi_adresa>
+        <vocab:turi_elektronini_pasta>mantasbut7@gmail.com</vocab:turi_elektronini_pasta>
+        <vocab:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-18</vocab:turi_sukurimo_data>
+        <vocab:turi_telefono_numeri>+37076785677</vocab:turi_telefono_numeri>
+        <rdfs:label>NAUDOTOJAS #7</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/NAUDOTOJAS/8 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Naudotojas"/>
+        <vocab:turi_adresa>Miesto g. 142, Vilnius</vocab:turi_adresa>
+        <vocab:turi_elektronini_pasta>kevinaskevin01@gmail.com</vocab:turi_elektronini_pasta>
+        <vocab:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-01</vocab:turi_sukurimo_data>
+        <vocab:turi_telefono_numeri>+37054535464</vocab:turi_telefono_numeri>
+        <rdfs:label>NAUDOTOJAS #8</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/NAUDOTOJAS/9 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/NAUDOTOJAS/9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Naudotojas"/>
+        <vocab:turi_adresa>Liepu g. 33, Kaunas</vocab:turi_adresa>
+        <vocab:turi_elektronini_pasta>askagialgis5@gmail.com</vocab:turi_elektronini_pasta>
+        <vocab:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-13</vocab:turi_sukurimo_data>
+        <vocab:turi_telefono_numeri>+37078567878</vocab:turi_telefono_numeri>
+        <rdfs:label>NAUDOTOJAS #9</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/PRASYMAS/1 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/PRASYMAS/1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prasymas"/>
+        <vocab:turi_busena>patvirtintas  </vocab:turi_busena>
+        <rdfs:label>PRASYMAS #1</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/PRASYMAS/3 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/PRASYMAS/3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prasymas"/>
+        <vocab:turi_busena>patvirtintas  </vocab:turi_busena>
+        <rdfs:label>PRASYMAS #3</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/PRASYMAS/6 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/PRASYMAS/6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prasymas"/>
+        <vocab:turi_busena>atmestas      </vocab:turi_busena>
+        <rdfs:label>PRASYMAS #6</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/PRASYMAS/7 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/PRASYMAS/7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prasymas"/>
+        <vocab:turi_busena>atmestas      </vocab:turi_busena>
+        <rdfs:label>PRASYMAS #7</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/PRIEGLAUDA/1 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/PRIEGLAUDA/1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prieglauda"/>
+        <vocab:organizuoja_susitikima rdf:resource="http://localhost:2020/resource/dbo/NAUDOTOJAS/1"/>
+        <vocab:turi_imones_koda>LT15848</vocab:turi_imones_koda>
+        <vocab:turi_pavadinima>Nuaras</vocab:turi_pavadinima>
+        <rdfs:label>PRIEGLAUDA #1</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/PRIEGLAUDA/2 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/PRIEGLAUDA/2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prieglauda"/>
+        <vocab:organizuoja_susitikima rdf:resource="http://localhost:2020/resource/dbo/NAUDOTOJAS/2"/>
+        <vocab:turi_imones_koda>LT45644</vocab:turi_imones_koda>
+        <vocab:turi_pavadinima>Penkta koja</vocab:turi_pavadinima>
+        <rdfs:label>PRIEGLAUDA #2</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/PRIEGLAUDA/3 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/PRIEGLAUDA/3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prieglauda"/>
+        <vocab:organizuoja_susitikima rdf:resource="http://localhost:2020/resource/dbo/NAUDOTOJAS/3"/>
+        <vocab:turi_imones_koda>LT78321</vocab:turi_imones_koda>
+        <vocab:turi_pavadinima>Katinuko namai</vocab:turi_pavadinima>
+        <rdfs:label>PRIEGLAUDA #3</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/PRIEGLAUDA/4 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/PRIEGLAUDA/4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prieglauda"/>
+        <vocab:organizuoja_susitikima rdf:resource="http://localhost:2020/resource/dbo/NAUDOTOJAS/4"/>
+        <vocab:turi_imones_koda>LT12547</vocab:turi_imones_koda>
+        <vocab:turi_pavadinima>Gyvunu sleptuve</vocab:turi_pavadinima>
+        <rdfs:label>PRIEGLAUDA #4</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/PRIEGLAUDA/5 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/PRIEGLAUDA/5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prieglauda"/>
+        <vocab:organizuoja_susitikima rdf:resource="http://localhost:2020/resource/dbo/NAUDOTOJAS/5"/>
+        <vocab:turi_imones_koda>LT78989</vocab:turi_imones_koda>
+        <vocab:turi_pavadinima>Rainiukai</vocab:turi_pavadinima>
+        <rdfs:label>PRIEGLAUDA #5</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/SUSITIKIMAS/1 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas"/>
+        <vocab:organizuojamas_asmeniui rdf:resource="http://localhost:2020/resource/dbo/ASMUO/6"/>
+        <vocab:organizuojamas_prieglaudoje rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/3"/>
+        <vocab:rodomas_gyvunas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</vocab:rodomas_gyvunas>
+        <vocab:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-10</vocab:turi_sukurimo_data>
+        <vocab:turi_susitikimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</vocab:turi_susitikimo_data>
+        <rdfs:label>SUSITIKIMAS #1</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/SUSITIKIMAS/10 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas"/>
+        <vocab:organizuojamas_asmeniui rdf:resource="http://localhost:2020/resource/dbo/ASMUO/10"/>
+        <vocab:organizuojamas_prieglaudoje rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/4"/>
+        <vocab:rodomas_gyvunas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</vocab:rodomas_gyvunas>
+        <vocab:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-10</vocab:turi_sukurimo_data>
+        <vocab:turi_susitikimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</vocab:turi_susitikimo_data>
+        <rdfs:label>SUSITIKIMAS #10</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/SUSITIKIMAS/2 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas"/>
+        <vocab:organizuojamas_asmeniui rdf:resource="http://localhost:2020/resource/dbo/ASMUO/6"/>
+        <vocab:organizuojamas_prieglaudoje rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/3"/>
+        <vocab:rodomas_gyvunas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</vocab:rodomas_gyvunas>
+        <vocab:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-10</vocab:turi_sukurimo_data>
+        <vocab:turi_susitikimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</vocab:turi_susitikimo_data>
+        <rdfs:label>SUSITIKIMAS #2</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/SUSITIKIMAS/3 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas"/>
+        <vocab:organizuojamas_asmeniui rdf:resource="http://localhost:2020/resource/dbo/ASMUO/6"/>
+        <vocab:organizuojamas_prieglaudoje rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/5"/>
+        <vocab:rodomas_gyvunas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</vocab:rodomas_gyvunas>
+        <vocab:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-10</vocab:turi_sukurimo_data>
+        <vocab:turi_susitikimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</vocab:turi_susitikimo_data>
+        <rdfs:label>SUSITIKIMAS #3</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/SUSITIKIMAS/4 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas"/>
+        <vocab:organizuojamas_asmeniui rdf:resource="http://localhost:2020/resource/dbo/ASMUO/6"/>
+        <vocab:organizuojamas_prieglaudoje rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/5"/>
+        <vocab:rodomas_gyvunas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</vocab:rodomas_gyvunas>
+        <vocab:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-10</vocab:turi_sukurimo_data>
+        <vocab:turi_susitikimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</vocab:turi_susitikimo_data>
+        <rdfs:label>SUSITIKIMAS #4</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/SUSITIKIMAS/5 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas"/>
+        <vocab:organizuojamas_asmeniui rdf:resource="http://localhost:2020/resource/dbo/ASMUO/8"/>
+        <vocab:organizuojamas_prieglaudoje rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/1"/>
+        <vocab:rodomas_gyvunas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</vocab:rodomas_gyvunas>
+        <vocab:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-10</vocab:turi_sukurimo_data>
+        <vocab:turi_susitikimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</vocab:turi_susitikimo_data>
+        <rdfs:label>SUSITIKIMAS #5</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/SUSITIKIMAS/6 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas"/>
+        <vocab:organizuojamas_asmeniui rdf:resource="http://localhost:2020/resource/dbo/ASMUO/8"/>
+        <vocab:organizuojamas_prieglaudoje rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/1"/>
+        <vocab:rodomas_gyvunas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</vocab:rodomas_gyvunas>
+        <vocab:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-10</vocab:turi_sukurimo_data>
+        <vocab:turi_susitikimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</vocab:turi_susitikimo_data>
+        <rdfs:label>SUSITIKIMAS #6</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/SUSITIKIMAS/7 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas"/>
+        <vocab:organizuojamas_asmeniui rdf:resource="http://localhost:2020/resource/dbo/ASMUO/8"/>
+        <vocab:organizuojamas_prieglaudoje rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/1"/>
+        <vocab:rodomas_gyvunas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</vocab:rodomas_gyvunas>
+        <vocab:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-10</vocab:turi_sukurimo_data>
+        <vocab:turi_susitikimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</vocab:turi_susitikimo_data>
+        <rdfs:label>SUSITIKIMAS #7</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/SUSITIKIMAS/8 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas"/>
+        <vocab:organizuojamas_asmeniui rdf:resource="http://localhost:2020/resource/dbo/ASMUO/8"/>
+        <vocab:organizuojamas_prieglaudoje rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/2"/>
+        <vocab:rodomas_gyvunas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</vocab:rodomas_gyvunas>
+        <vocab:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-10</vocab:turi_sukurimo_data>
+        <vocab:turi_susitikimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</vocab:turi_susitikimo_data>
+        <rdfs:label>SUSITIKIMAS #8</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/SUSITIKIMAS/9 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/SUSITIKIMAS/9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas"/>
+        <vocab:organizuojamas_asmeniui rdf:resource="http://localhost:2020/resource/dbo/ASMUO/10"/>
+        <vocab:organizuojamas_prieglaudoje rdf:resource="http://localhost:2020/resource/dbo/PRIEGLAUDA/4"/>
+        <vocab:rodomas_gyvunas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</vocab:rodomas_gyvunas>
+        <vocab:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-10</vocab:turi_sukurimo_data>
+        <vocab:turi_susitikimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-18</vocab:turi_susitikimo_data>
+        <rdfs:label>SUSITIKIMAS #9</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/SUTARTIS/2 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/SUTARTIS/2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Sutartis"/>
+        <vocab:turi_busena>patvirtintas  </vocab:turi_busena>
+        <vocab:turi_pasirasymo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-20</vocab:turi_pasirasymo_data>
+        <rdfs:label>SUTARTIS #2</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:2020/resource/dbo/SUTARTIS/4 -->
+
+    <NamedIndividual rdf:about="http://localhost:2020/resource/dbo/SUTARTIS/4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Sutartis"/>
+        <vocab:turi_busena>patvirtintas  </vocab:turi_busena>
+        <vocab:turi_pasirasymo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-20</vocab:turi_pasirasymo_data>
+        <rdfs:label>SUTARTIS #4</rdfs:label>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

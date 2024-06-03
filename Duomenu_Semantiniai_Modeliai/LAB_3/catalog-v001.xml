@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2" uri="gyvuneliu_priglaudimas.rdf"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1716330262160" name="duplicate:http://localhost:2020/resource/" uri="dump_is_koreguoto_mappingo_gyvuneliu_priglaudimas.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1716330262160" name="duplicate:http://localhost:2020/resource/" uri="gyvuneliu_priglaudimas_dump_is_koreguoto_mappingo.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1716330262160" name="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2/" uri="gyvuneliu_priglaudimas.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1716330262160" name="http://www.w3.org/2002/07/owl" uri="gyvuneliu_priglaudimas_is_dump.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1716330262160" name="shadowed:http://localhost:2020/resource/" uri="d2rq/d2rq-0.8.1/dump_is_koreguoto_mappingo_gyvuneliu_priglaudimas.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1716330262160" name="shadowed:http://localhost:2020/resource/" uri="d2rq/d2rq-0.8.1/gyvuneliu_priglaudimas.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1716330262160" name="shadowed:http://localhost:2020/resource/" uri="d2rq/d2rq-0.8.1/gyvuneliu_priglaudimas_dump_is_koreguoto_mappingo.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1716330262160" name="shadowed:http://www.w3.org/2002/07/owl" uri="d2rq/d2rq-0.8.1/owl_is_dump.rdf"/>
+    </group>
+</catalog>

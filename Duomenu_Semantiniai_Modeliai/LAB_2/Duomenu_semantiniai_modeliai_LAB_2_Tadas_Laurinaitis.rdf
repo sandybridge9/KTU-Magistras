@@ -1,0 +1,994 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2/"
+     xml:base="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Duomenu-semantiniai-modeliai-lab-2="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2">
+        <rdfs:comment>Ontologija skirta naminių gyvūnėlių priglaudimo sistemos sričiai.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#atlieka_patikrinima -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#atlieka_patikrinima">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#gautas_is_prieglaudos"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prieglauda"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmens_patikrinimas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#dalyvauja_dokumente -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#dalyvauja_dokumente">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pridetas_gyvunas"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Dokumentas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#dalyvauja_grazinime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#dalyvauja_grazinime">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#dalyvauja_dokumente"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pridetas_grazinime_gyvunas"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Grazinimas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#dalyvauja_prasyme -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#dalyvauja_prasyme">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#dalyvauja_dokumente"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pridetas_prasyme_gyvunas"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prasymas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#dalyvauja_susitikime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#dalyvauja_susitikime">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#organizuojamas_asmeniui"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmuo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#dalyvauja_sutartyje -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#dalyvauja_sutartyje">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#dalyvauja_dokumente"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pridetas_sutartyje_gyvunas"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Sutartis"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#gauna_pakeitimus_is_prieglaudos -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#gauna_pakeitimus_is_prieglaudos">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#keicia_dokumento_busena"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Dokumentas"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prieglauda"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#gautas_is_prieglaudos -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#gautas_is_prieglaudos">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmens_patikrinimas"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prieglauda"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#gyvena_prieglaudoje -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#gyvena_prieglaudoje">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_gyvuna"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prieglauda"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#keicia_dokumento_busena -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#keicia_dokumento_busena">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prieglauda"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Dokumentas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#organizuoja_susitikima -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#organizuoja_susitikima">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#ruosia_vieta_susitikimui"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#organizuojamas_prieglaudoje"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prieglauda"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#organizuojamas_asmeniui -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#organizuojamas_asmeniui">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmuo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#organizuojamas_prieglaudoje -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#organizuojamas_prieglaudoje">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prieglauda"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#paglosto_gyvuna -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#paglosto_gyvuna">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmuo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#patikrina_asmeni -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#patikrina_asmeni">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_patikrinima"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmens_patikrinimas"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmuo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pildo_dokumenta -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pildo_dokumenta">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pildomas_asmens"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmuo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Dokumentas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pildomas_asmens -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pildomas_asmens">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Dokumentas"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmuo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pridetas_grazinime_gyvunas -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pridetas_grazinime_gyvunas">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pridetas_gyvunas"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Grazinimas"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pridetas_gyvunas -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pridetas_gyvunas">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Dokumentas"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pridetas_prasyme_gyvunas -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pridetas_prasyme_gyvunas">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pridetas_gyvunas"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prasymas"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pridetas_sutartyje_gyvunas -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pridetas_sutartyje_gyvunas">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pridetas_gyvunas"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Sutartis"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#priklauso_gyvunui -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#priklauso_gyvunui">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_aprasyma"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvuno_aprasymas"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#rodomas_gyvunas -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#rodomas_gyvunas">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#rodomas_susitikime"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#rodomas_susitikime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#rodomas_susitikime">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#ruosia_vieta_susitikimui -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#ruosia_vieta_susitikimui">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prieglauda"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_aprasyma -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_aprasyma">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvuno_aprasymas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_gyvuna -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_gyvuna">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prieglauda"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_patikrinima -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_patikrinima">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmuo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmens_patikrinimas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_adresa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_adresa">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Naudotojas"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_aprasymo_teksta -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_aprasymo_teksta">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvuno_aprasymas"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_asmens_koda -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_asmens_koda">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmuo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_busena -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_busena">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prasymas"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Sutartis"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_data -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_data">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmens_patikrinimas"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_elektronini_pasta -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_elektronini_pasta">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Naudotojas"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_gimimo_data -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_gimimo_data">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmuo"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_grazinimo_data -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_grazinimo_data">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Grazinimas"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_gyvuno_dydzio_kategorija -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_gyvuno_dydzio_kategorija">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_imones_koda -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_imones_koda">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prieglauda"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_pasirasymo_data -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_pasirasymo_data">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Sutartis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_pavadinima -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_pavadinima">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prieglauda"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_pavarde -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_pavarde">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmuo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_rusi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_rusi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_sukurimo_data -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_sukurimo_data">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Dokumentas"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Naudotojas"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_susitikimo_data -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_susitikimo_data">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_teksta -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_teksta">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmens_patikrinimas"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Dokumentas"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_telefono_numeri -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_telefono_numeri">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Naudotojas"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_tinkamuma -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_tinkamuma">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmens_patikrinimas"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_varda -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_varda">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmuo"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_veisle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_veisle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmens_patikrinimas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmens_patikrinimas"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmuo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmuo">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Naudotojas"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#dalyvauja_susitikime"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pildo_dokumenta"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Dokumentas"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_patikrinima"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmens_patikrinimas"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Naudotojas"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prieglauda"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Dokumentas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Dokumentas"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Grazinimas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Grazinimas">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Dokumentas"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pridetas_grazinime_gyvunas"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Dokumentas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvuno_aprasymas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvuno_aprasymas"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Naudotojas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Naudotojas"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prasymas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prasymas">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Dokumentas"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pridetas_prasyme_gyvunas"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Dokumentas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prieglauda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prieglauda">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Naudotojas"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#atlieka_patikrinima"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmens_patikrinimas"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#keicia_dokumento_busena"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Dokumentas"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#organizuoja_susitikima"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#turi_gyvuna"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Naudotojas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Sutartis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Sutartis">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Dokumentas"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pridetas_sutartyje_gyvunas"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Dokumentas"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Bite -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Bite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+        <Duomenu-semantiniai-modeliai-lab-2:dalyvauja_grazinime rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Bites_grazinimas"/>
+        <Duomenu-semantiniai-modeliai-lab-2:dalyvauja_prasyme rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Bites_prasymas"/>
+        <Duomenu-semantiniai-modeliai-lab-2:dalyvauja_sutartyje rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Bites_sutartis"/>
+        <Duomenu-semantiniai-modeliai-lab-2:rodomas_susitikime rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas_su_Bite"/>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_aprasyma rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Bites_aprasymas_1"/>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_aprasyma rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Bites_aprasymas_2"/>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-02T02:00:00</Duomenu-semantiniai-modeliai-lab-2:turi_gimimo_data>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_gyvuno_dydzio_kategorija rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">S</Duomenu-semantiniai-modeliai-lab-2:turi_gyvuno_dydzio_kategorija>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_rusi rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Suo</Duomenu-semantiniai-modeliai-lab-2:turi_rusi>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_varda rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Bite</Duomenu-semantiniai-modeliai-lab-2:turi_varda>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_veisle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Chihuahua</Duomenu-semantiniai-modeliai-lab-2:turi_veisle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Bites_aprasymas_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Bites_aprasymas_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvuno_aprasymas"/>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_aprasymo_teksta rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Labai grazus suniukas, tikrai mielas ir draugiskas, tinkantis visokioms seimoms</Duomenu-semantiniai-modeliai-lab-2:turi_aprasymo_teksta>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Bites_aprasymas_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Bites_aprasymas_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvuno_aprasymas"/>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_aprasymo_teksta rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Labai gera Bite</Duomenu-semantiniai-modeliai-lab-2:turi_aprasymo_teksta>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Bites_grazinimas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Bites_grazinimas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Grazinimas"/>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_grazinimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-15T06:45:45</Duomenu-semantiniai-modeliai-lab-2:turi_grazinimo_data>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-15T14:22:22</Duomenu-semantiniai-modeliai-lab-2:turi_sukurimo_data>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_teksta rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Suniuko Bites grazinimas</Duomenu-semantiniai-modeliai-lab-2:turi_teksta>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Bites_prasymas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Bites_prasymas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prasymas"/>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_busena rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Patvirtintas</Duomenu-semantiniai-modeliai-lab-2:turi_busena>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-07T00:00:00</Duomenu-semantiniai-modeliai-lab-2:turi_sukurimo_data>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_teksta rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Prasymas priimti i globa suniuka Bite</Duomenu-semantiniai-modeliai-lab-2:turi_teksta>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Bites_sutartis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Bites_sutartis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Sutartis"/>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_busena rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Pasirasytas</Duomenu-semantiniai-modeliai-lab-2:turi_busena>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_pasirasymo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-13T14:46:47</Duomenu-semantiniai-modeliai-lab-2:turi_pasirasymo_data>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-12T15:20:45</Duomenu-semantiniai-modeliai-lab-2:turi_sukurimo_data>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_teksta rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Priglaudimo sutartis gyvunui suniukui bitei</Duomenu-semantiniai-modeliai-lab-2:turi_teksta>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Kaciuku_prieglauda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Kaciuku_prieglauda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prieglauda"/>
+        <Duomenu-semantiniai-modeliai-lab-2:atlieka_patikrinima rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Kazio_patikrinimas"/>
+        <Duomenu-semantiniai-modeliai-lab-2:keicia_dokumento_busena rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Smikio_prasymas"/>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_gyvuna rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Smikis"/>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_adresa rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Ringuvos g 4</Duomenu-semantiniai-modeliai-lab-2:turi_adresa>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_elektronini_pasta rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">kaciukai@gmail.com</Duomenu-semantiniai-modeliai-lab-2:turi_elektronini_pasta>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_imones_koda rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">4198984894</Duomenu-semantiniai-modeliai-lab-2:turi_imones_koda>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_pavadinima rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Kaciuku prieglauda</Duomenu-semantiniai-modeliai-lab-2:turi_pavadinima>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-02-02T11:15:00</Duomenu-semantiniai-modeliai-lab-2:turi_sukurimo_data>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_telefono_numeri rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">8654854189</Duomenu-semantiniai-modeliai-lab-2:turi_telefono_numeri>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Kazio_patikrinimas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Kazio_patikrinimas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmens_patikrinimas"/>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_data rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-11T12:45:00</Duomenu-semantiniai-modeliai-lab-2:turi_data>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_teksta rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Asmuo netinkamas nes turi nusizengimu pries gyvunus</Duomenu-semantiniai-modeliai-lab-2:turi_teksta>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_tinkamuma rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Netinkamas</Duomenu-semantiniai-modeliai-lab-2:turi_tinkamuma>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Kazys -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Kazys">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmuo"/>
+        <Duomenu-semantiniai-modeliai-lab-2:pildo_dokumenta rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Smikio_prasymas"/>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_patikrinima rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Kazio_patikrinimas"/>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_adresa rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lenguvos pl 14</Duomenu-semantiniai-modeliai-lab-2:turi_adresa>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_asmens_koda rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">8484895958149</Duomenu-semantiniai-modeliai-lab-2:turi_asmens_koda>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_elektronini_pasta rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">kazys@kazoo.lt</Duomenu-semantiniai-modeliai-lab-2:turi_elektronini_pasta>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1998-04-05T12:00:00</Duomenu-semantiniai-modeliai-lab-2:turi_gimimo_data>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_pavarde rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Kazaitis</Duomenu-semantiniai-modeliai-lab-2:turi_pavarde>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-05T12:15:14</Duomenu-semantiniai-modeliai-lab-2:turi_sukurimo_data>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_telefono_numeri rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">865485217147</Duomenu-semantiniai-modeliai-lab-2:turi_telefono_numeri>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_varda rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Kazys</Duomenu-semantiniai-modeliai-lab-2:turi_varda>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Mantvydas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Mantvydas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmuo"/>
+        <Duomenu-semantiniai-modeliai-lab-2:dalyvauja_susitikime rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas_su_Bite"/>
+        <Duomenu-semantiniai-modeliai-lab-2:paglosto_gyvuna rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Bite"/>
+        <Duomenu-semantiniai-modeliai-lab-2:pildo_dokumenta rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Bites_grazinimas"/>
+        <Duomenu-semantiniai-modeliai-lab-2:pildo_dokumenta rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Bites_prasymas"/>
+        <Duomenu-semantiniai-modeliai-lab-2:pildo_dokumenta rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Bites_sutartis"/>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_patikrinima rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Mantvydo_patikrinimas"/>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_adresa rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Kanku g 45</Duomenu-semantiniai-modeliai-lab-2:turi_adresa>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_asmens_koda rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">48148717415</Duomenu-semantiniai-modeliai-lab-2:turi_asmens_koda>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_elektronini_pasta rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">mantve@gmail.com</Duomenu-semantiniai-modeliai-lab-2:turi_elektronini_pasta>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1977-08-07T18:20:00</Duomenu-semantiniai-modeliai-lab-2:turi_gimimo_data>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_pavarde rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Mantyvas</Duomenu-semantiniai-modeliai-lab-2:turi_pavarde>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-06T17:52:14</Duomenu-semantiniai-modeliai-lab-2:turi_sukurimo_data>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_telefono_numeri rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">86454145159</Duomenu-semantiniai-modeliai-lab-2:turi_telefono_numeri>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_varda rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Mantvydas</Duomenu-semantiniai-modeliai-lab-2:turi_varda>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Mantvydo_patikrinimas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Mantvydo_patikrinimas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Asmens_patikrinimas"/>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_data rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-12T14:17:00</Duomenu-semantiniai-modeliai-lab-2:turi_data>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_teksta rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Asmuo yra tinkamas</Duomenu-semantiniai-modeliai-lab-2:turi_teksta>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_tinkamuma rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Tinkamas</Duomenu-semantiniai-modeliai-lab-2:turi_tinkamuma>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Nuaras -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Nuaras">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prieglauda"/>
+        <Duomenu-semantiniai-modeliai-lab-2:atlieka_patikrinima rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Mantvydo_patikrinimas"/>
+        <Duomenu-semantiniai-modeliai-lab-2:keicia_dokumento_busena rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Bites_grazinimas"/>
+        <Duomenu-semantiniai-modeliai-lab-2:keicia_dokumento_busena rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Bites_prasymas"/>
+        <Duomenu-semantiniai-modeliai-lab-2:keicia_dokumento_busena rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Bites_sutartis"/>
+        <Duomenu-semantiniai-modeliai-lab-2:organizuoja_susitikima rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas_su_Bite"/>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_gyvuna rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Bite"/>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_adresa rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Roziu g 1</Duomenu-semantiniai-modeliai-lab-2:turi_adresa>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_elektronini_pasta rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">nuaras@gmail.com</Duomenu-semantiniai-modeliai-lab-2:turi_elektronini_pasta>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_imones_koda rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">84181881</Duomenu-semantiniai-modeliai-lab-2:turi_imones_koda>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_pavadinima rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Nuaras</Duomenu-semantiniai-modeliai-lab-2:turi_pavadinima>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-01T01:00:00</Duomenu-semantiniai-modeliai-lab-2:turi_sukurimo_data>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_telefono_numeri rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">865933858151</Duomenu-semantiniai-modeliai-lab-2:turi_telefono_numeri>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Nuaro_aikstele -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Nuaro_aikstele"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Smikio_prasymas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Smikio_prasymas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prasymas"/>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_busena rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Atmestas</Duomenu-semantiniai-modeliai-lab-2:turi_busena>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-07T14:00:00</Duomenu-semantiniai-modeliai-lab-2:turi_sukurimo_data>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_teksta rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Prasymas priimti i globa suniuka Brisiu</Duomenu-semantiniai-modeliai-lab-2:turi_teksta>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Smikis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Smikis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Gyvunas"/>
+        <Duomenu-semantiniai-modeliai-lab-2:dalyvauja_prasyme rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Smikio_prasymas"/>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_gimimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-02-02T02:02:02</Duomenu-semantiniai-modeliai-lab-2:turi_gimimo_data>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_gyvuno_dydzio_kategorija rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">M</Duomenu-semantiniai-modeliai-lab-2:turi_gyvuno_dydzio_kategorija>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_rusi rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Kate</Duomenu-semantiniai-modeliai-lab-2:turi_rusi>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_varda rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Amsius</Duomenu-semantiniai-modeliai-lab-2:turi_varda>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_veisle rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Bengalas</Duomenu-semantiniai-modeliai-lab-2:turi_veisle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas_su_Bite -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas_su_Bite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Susitikimas"/>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_sukurimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-01T14:00:00</Duomenu-semantiniai-modeliai-lab-2:turi_sukurimo_data>
+        <Duomenu-semantiniai-modeliai-lab-2:turi_susitikimo_data rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-02T15:00:00</Duomenu-semantiniai-modeliai-lab-2:turi_susitikimo_data>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Grazinimas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Prasymas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#Sutartis"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#dalyvauja_grazinime"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#dalyvauja_prasyme"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#dalyvauja_sutartyje"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pridetas_grazinime_gyvunas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pridetas_prasyme_gyvunas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#pridetas_sutartyje_gyvunas"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

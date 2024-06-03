@@ -1,0 +1,359 @@
+@prefix map: <#> .
+@prefix db: <> .
+@prefix vocab: <http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+@prefix jdbc: <http://d2rq.org/terms/jdbc/> .
+
+map:database a d2rq:Database;
+	d2rq:jdbcDriver "com.microsoft.sqlserver.jdbc.SQLServerDriver";
+	d2rq:jdbcDSN "jdbc:sqlserver://DESTROYER-XI\\SQLEXPRESS:1433;databaseName=DuomenuSemantiniaiModeliai;encrypt=true;trustServerCertificate=true;";
+	d2rq:username "sa2";
+	d2rq:password "1234";
+	.
+
+# Table dbo.APRASYMAS
+map:dbo_APRASYMAS a d2rq:ClassMap;
+	d2rq:dataStorage map:database;
+	d2rq:uriPattern "dbo/APRASYMAS/@@dbo.APRASYMAS.id_APRASYMAS@@";
+	d2rq:class vocab:Gyvuno_aprasymas;
+	.
+map:dbo_APRASYMAS__label a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_APRASYMAS;
+	d2rq:property rdfs:label;
+	d2rq:pattern "APRASYMAS #@@dbo.APRASYMAS.id_APRASYMAS@@";
+	.
+map:dbo_APRASYMAS_tekstas a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_APRASYMAS;
+	d2rq:property vocab:turi_aprasymo_teksta;
+	d2rq:column "dbo.APRASYMAS.tekstas";
+	.
+map:dbo_APRASYMAS_fk_GYVUNASid_GYVUNAS__ref a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_APRASYMAS;
+	d2rq:property vocab:priklauso_gyvunui;
+	d2rq:refersToClassMap map:dbo_GYVUNAS;
+	d2rq:join "dbo.APRASYMAS.fk_GYVUNASid_GYVUNAS => dbo.GYVUNAS.id_GYVUNAS";
+	.
+
+# Table dbo.ASMENS_PATIKRINIMAS
+map:dbo_ASMENS_PATIKRINIMAS a d2rq:ClassMap;
+	d2rq:dataStorage map:database;
+	d2rq:uriPattern "dbo/ASMENS_PATIKRINIMAS/@@dbo.ASMENS_PATIKRINIMAS.id_ASMENS_PATIKRINIMAS@@";
+	d2rq:class vocab:Asmens_patikrinimas;
+	.
+map:dbo_ASMENS_PATIKRINIMAS__label a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_ASMENS_PATIKRINIMAS;
+	d2rq:property rdfs:label;
+	d2rq:pattern "ASMENS_PATIKRINIMAS #@@dbo.ASMENS_PATIKRINIMAS.id_ASMENS_PATIKRINIMAS@@";
+	.
+map:dbo_ASMENS_PATIKRINIMAS_data a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_ASMENS_PATIKRINIMAS;
+	d2rq:property vocab:turi_data;
+	d2rq:column "dbo.ASMENS_PATIKRINIMAS.data";
+	d2rq:datatype xsd:date;
+	.
+map:dbo_ASMENS_PATIKRINIMAS_tinkamumas a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_ASMENS_PATIKRINIMAS;
+	d2rq:property vocab:turi_tinkamuma;
+	d2rq:column "dbo.ASMENS_PATIKRINIMAS.tinkamumas";
+	d2rq:valueRegex "^[01]$";
+	.
+map:dbo_ASMENS_PATIKRINIMAS_aprasymas a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_ASMENS_PATIKRINIMAS;
+	d2rq:property vocab:turi_teksta;
+	d2rq:column "dbo.ASMENS_PATIKRINIMAS.aprasymas";
+	.
+map:dbo_ASMENS_PATIKRINIMAS_fk_ASMUOid_NAUDOTOJAS__ref a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_ASMENS_PATIKRINIMAS;
+	d2rq:property vocab:patikrina_asmeni;
+	d2rq:refersToClassMap map:dbo_ASMUO;
+	d2rq:join "dbo.ASMENS_PATIKRINIMAS.fk_ASMUOid_NAUDOTOJAS => dbo.ASMUO.id_NAUDOTOJAS";
+	.
+map:dbo_ASMENS_PATIKRINIMAS_fk_PRIEGLAUDAid_NAUDOTOJAS__ref a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_ASMENS_PATIKRINIMAS;
+	d2rq:property vocab:gautas_is_prieglaudos;
+	d2rq:refersToClassMap map:dbo_PRIEGLAUDA;
+	d2rq:join "dbo.ASMENS_PATIKRINIMAS.fk_PRIEGLAUDAid_NAUDOTOJAS => dbo.PRIEGLAUDA.id_NAUDOTOJAS";
+	.
+
+# Table dbo.ASMUO
+map:dbo_ASMUO a d2rq:ClassMap;
+	d2rq:dataStorage map:database;
+	d2rq:uriPattern "dbo/ASMUO/@@dbo.ASMUO.id_NAUDOTOJAS@@";
+	d2rq:class vocab:Asmuo;
+	.
+map:dbo_ASMUO__label a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_ASMUO;
+	d2rq:property rdfs:label;
+	d2rq:pattern "ASMUO #@@dbo.ASMUO.id_NAUDOTOJAS@@";
+	.
+map:dbo_ASMUO_vardas a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_ASMUO;
+	d2rq:property vocab:turi_varda;
+	d2rq:column "dbo.ASMUO.vardas";
+	.
+map:dbo_ASMUO_pavarde a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_ASMUO;
+	d2rq:property vocab:turi_pavarde;
+	d2rq:column "dbo.ASMUO.pavarde";
+	.
+map:dbo_ASMUO_gimimo_data a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_ASMUO;
+	d2rq:property vocab:turi_gimimo_data;
+	d2rq:column "dbo.ASMUO.gimimo_data";
+	d2rq:datatype xsd:date;
+	.
+map:dbo_ASMUO_asmens_kodas a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_ASMUO;
+	d2rq:property vocab:turi_asmens_koda;
+	d2rq:column "dbo.ASMUO.asmens_kodas";
+	.
+
+# Table dbo.DOKUMENTAS
+map:dbo_DOKUMENTAS a d2rq:ClassMap;
+	d2rq:dataStorage map:database;
+	d2rq:uriPattern "dbo/DOKUMENTAS/@@dbo.DOKUMENTAS.id_DOKUMENTAS@@";
+	d2rq:class vocab:Dokumentas;
+	.
+map:dbo_DOKUMENTAS__label a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_DOKUMENTAS;
+	d2rq:property rdfs:label;
+	d2rq:pattern "DOKUMENTAS #@@dbo.DOKUMENTAS.id_DOKUMENTAS@@";
+	.
+map:dbo_DOKUMENTAS_sukurimo_data a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_DOKUMENTAS;
+	d2rq:property vocab:turi_sukurimo_data;
+	d2rq:column "dbo.DOKUMENTAS.sukurimo_data";
+	d2rq:datatype xsd:date;
+	.
+map:dbo_DOKUMENTAS_tekstas a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_DOKUMENTAS;
+	d2rq:property vocab:turi_teksta;
+	d2rq:column "dbo.DOKUMENTAS.tekstas";
+	.
+map:dbo_DOKUMENTAS_fk_ASMUOid_NAUDOTOJAS__ref a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_DOKUMENTAS;
+	d2rq:property vocab:pildomas_asmens;
+	d2rq:refersToClassMap map:dbo_ASMUO;
+	d2rq:join "dbo.DOKUMENTAS.fk_ASMUOid_NAUDOTOJAS => dbo.ASMUO.id_NAUDOTOJAS";
+	.
+map:dbo_DOKUMENTAS_fk_GYVUNASid_GYVUNAS__ref a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_DOKUMENTAS;
+	d2rq:property vocab:pridetas_gyvunas;
+	d2rq:refersToClassMap map:dbo_GYVUNAS;
+	d2rq:join "dbo.DOKUMENTAS.fk_GYVUNASid_GYVUNAS => dbo.GYVUNAS.id_GYVUNAS";
+	.
+map:dbo_DOKUMENTAS_fk_PRIEGLAUDAid_NAUDOTOJAS__ref a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_DOKUMENTAS;
+	d2rq:property vocab:gauna_pakeitimus_is_prieglaudos;
+	d2rq:refersToClassMap map:dbo_PRIEGLAUDA;
+	d2rq:join "dbo.DOKUMENTAS.fk_PRIEGLAUDAid_NAUDOTOJAS => dbo.PRIEGLAUDA.id_NAUDOTOJAS";
+	.
+
+# Table dbo.GYVUNAS
+map:dbo_GYVUNAS a d2rq:ClassMap;
+	d2rq:dataStorage map:database;
+	d2rq:uriPattern "dbo/GYVUNAS/@@dbo.GYVUNAS.id_GYVUNAS@@";
+	d2rq:class vocab:Gyvunas;
+	.
+map:dbo_GYVUNAS__label a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_GYVUNAS;
+	d2rq:property rdfs:label;
+	d2rq:pattern "GYVUNAS #@@dbo.GYVUNAS.id_GYVUNAS@@";
+	.
+map:dbo_GYVUNAS_vardas a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_GYVUNAS;
+	d2rq:property vocab:turi_varda;
+	d2rq:column "dbo.GYVUNAS.vardas";
+	.
+map:dbo_GYVUNAS_veisle a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_GYVUNAS;
+	d2rq:property vocab:turi_veisle;
+	d2rq:column "dbo.GYVUNAS.veisle";
+	.
+map:dbo_GYVUNAS_gimimo_data a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_GYVUNAS;
+	d2rq:property vocab:turi_gimimo_data;
+	d2rq:column "dbo.GYVUNAS.gimimo_data";
+	d2rq:datatype xsd:date;
+	.
+map:dbo_GYVUNAS_rusis a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_GYVUNAS;
+	d2rq:property vocab:turi_rusi;
+	d2rq:column "dbo.GYVUNAS.rusis";
+	.
+map:dbo_GYVUNAS_gyvno_dydzio_kategorija a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_GYVUNAS;
+	d2rq:property vocab:turi_gyvuno_dydzio_kategorija;
+	d2rq:column "dbo.GYVUNAS.gyvno_dydzio_kategorija";
+	.
+map:dbo_GYVUNAS_fk_PRIEGLAUDAid_NAUDOTOJAS__ref a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_GYVUNAS;
+	d2rq:property vocab:gyvena_prieglaudoje;
+	d2rq:refersToClassMap map:dbo_PRIEGLAUDA;
+	d2rq:join "dbo.GYVUNAS.fk_PRIEGLAUDAid_NAUDOTOJAS => dbo.PRIEGLAUDA.id_NAUDOTOJAS";
+	.
+
+# Table dbo.GRAZINIMAS
+map:dbo_GRAZINIMAS a d2rq:ClassMap;
+	d2rq:dataStorage map:database;
+	d2rq:uriPattern "dbo/GRAZINIMAS/@@dbo.GRAZINIMAS.id_DOKUMENTAS@@";
+	d2rq:class vocab:Grazinimas;
+	.
+map:dbo_GRAZINIMAS__label a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_GRAZINIMAS;
+	d2rq:property rdfs:label;
+	d2rq:pattern "GRAZINIMAS #@@dbo.GRAZINIMAS.id_DOKUMENTAS@@";
+	.
+map:dbo_GRAZINIMAS_grazinimo_data a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_GRAZINIMAS;
+	d2rq:property vocab:turi_grazinimo_data;
+	d2rq:column "dbo.GRAZINIMAS.grazinimo_data";
+	d2rq:datatype xsd:date;
+	.
+
+# Table dbo.NAUDOTOJAS
+map:dbo_NAUDOTOJAS a d2rq:ClassMap;
+	d2rq:dataStorage map:database;
+	d2rq:uriPattern "dbo/NAUDOTOJAS/@@dbo.NAUDOTOJAS.id_NAUDOTOJAS@@";
+	d2rq:class vocab:Naudotojas;
+	.
+map:dbo_NAUDOTOJAS__label a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_NAUDOTOJAS;
+	d2rq:property rdfs:label;
+	d2rq:pattern "NAUDOTOJAS #@@dbo.NAUDOTOJAS.id_NAUDOTOJAS@@";
+	.
+map:dbo_NAUDOTOJAS_adresas a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_NAUDOTOJAS;
+	d2rq:property vocab:turi_adresa;
+	d2rq:column "dbo.NAUDOTOJAS.adresas";
+	.
+map:dbo_NAUDOTOJAS_elektroninis_pastas a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_NAUDOTOJAS;
+	d2rq:property vocab:turi_elektronini_pasta;
+	d2rq:column "dbo.NAUDOTOJAS.elektroninis_pastas";
+	.
+map:dbo_NAUDOTOJAS_telefono_numeris a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_NAUDOTOJAS;
+	d2rq:property vocab:turi_telefono_numeri;
+	d2rq:column "dbo.NAUDOTOJAS.telefono_numeris";
+	.
+map:dbo_NAUDOTOJAS_registracijos_data a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_NAUDOTOJAS;
+	d2rq:property vocab:turi_sukurimo_data;
+	d2rq:column "dbo.NAUDOTOJAS.registracijos_data";
+	d2rq:datatype xsd:date;
+	.
+
+# Table dbo.PRASYMAS
+map:dbo_PRASYMAS a d2rq:ClassMap;
+	d2rq:dataStorage map:database;
+	d2rq:uriPattern "dbo/PRASYMAS/@@dbo.PRASYMAS.id_DOKUMENTAS@@";
+	d2rq:class vocab:Prasymas;
+	.
+map:dbo_PRASYMAS__label a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_PRASYMAS;
+	d2rq:property rdfs:label;
+	d2rq:pattern "PRASYMAS #@@dbo.PRASYMAS.id_DOKUMENTAS@@";
+	.
+map:dbo_PRASYMAS_busena a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_PRASYMAS;
+	d2rq:property vocab:turi_busena;
+	d2rq:column "dbo.PRASYMAS.busena";
+	.
+
+# Table dbo.PRIEGLAUDA
+map:dbo_PRIEGLAUDA a d2rq:ClassMap;
+	d2rq:dataStorage map:database;
+	d2rq:uriPattern "dbo/PRIEGLAUDA/@@dbo.PRIEGLAUDA.id_NAUDOTOJAS@@";
+	d2rq:class vocab:Prieglauda;
+	.
+map:dbo_PRIEGLAUDA__label a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_PRIEGLAUDA;
+	d2rq:property rdfs:label;
+	d2rq:pattern "PRIEGLAUDA #@@dbo.PRIEGLAUDA.id_NAUDOTOJAS@@";
+	.
+map:dbo_PRIEGLAUDA_pavadinimas a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_PRIEGLAUDA;
+	d2rq:property vocab:turi_pavadinima;
+	d2rq:column "dbo.PRIEGLAUDA.pavadinimas";
+	.
+map:dbo_PRIEGLAUDA_imones_kodas a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_PRIEGLAUDA;
+	d2rq:property vocab:turi_imones_koda;
+	d2rq:column "dbo.PRIEGLAUDA.imones_kodas";
+	.
+map:dbo_PRIEGLAUDA_id_NAUDOTOJAS__ref a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_PRIEGLAUDA;
+	d2rq:property vocab:organizuoja_susitikima;
+	d2rq:refersToClassMap map:dbo_NAUDOTOJAS;
+	d2rq:join "dbo.PRIEGLAUDA.id_NAUDOTOJAS => dbo.NAUDOTOJAS.id_NAUDOTOJAS";
+	.
+
+# Table dbo.SUSITIKIMAS
+map:dbo_SUSITIKIMAS a d2rq:ClassMap;
+	d2rq:dataStorage map:database;
+	d2rq:uriPattern "dbo/SUSITIKIMAS/@@dbo.SUSITIKIMAS.id_SUSITIKIMAS@@";
+	d2rq:class vocab:Susitikimas;
+	.
+map:dbo_SUSITIKIMAS__label a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_SUSITIKIMAS;
+	d2rq:property rdfs:label;
+	d2rq:pattern "SUSITIKIMAS #@@dbo.SUSITIKIMAS.id_SUSITIKIMAS@@";
+	.
+map:dbo_SUSITIKIMAS_sukurimo_data a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_SUSITIKIMAS;
+	d2rq:property vocab:turi_sukurimo_data;
+	d2rq:column "dbo.SUSITIKIMAS.sukurimo_data";
+	d2rq:datatype xsd:date;
+	.
+map:dbo_SUSITIKIMAS_susitikimo_data a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_SUSITIKIMAS;
+	d2rq:property vocab:turi_susitikimo_data;
+	d2rq:column "dbo.SUSITIKIMAS.susitikimo_data";
+	d2rq:datatype xsd:date;
+	.
+map:dbo_SUSITIKIMAS_fk_GYVUNASid_GYVUNAS a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_SUSITIKIMAS;
+	d2rq:property vocab:rodomas_gyvunas;
+	d2rq:column "dbo.SUSITIKIMAS.fk_GYVUNASid_GYVUNAS";
+	d2rq:datatype xsd:integer;
+	.
+map:dbo_SUSITIKIMAS_fk_PRIEGLAUDAid_NAUDOTOJAS__ref a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_SUSITIKIMAS;
+	d2rq:property vocab:organizuojamas_prieglaudoje;
+	d2rq:refersToClassMap map:dbo_PRIEGLAUDA;
+	d2rq:join "dbo.SUSITIKIMAS.fk_PRIEGLAUDAid_NAUDOTOJAS => dbo.PRIEGLAUDA.id_NAUDOTOJAS";
+	.
+map:dbo_SUSITIKIMAS_fk_ASMUOid_NAUDOTOJAS__ref a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_SUSITIKIMAS;
+	d2rq:property vocab:organizuojamas_asmeniui;
+	d2rq:refersToClassMap map:dbo_ASMUO;
+	d2rq:join "dbo.SUSITIKIMAS.fk_ASMUOid_NAUDOTOJAS => dbo.ASMUO.id_NAUDOTOJAS";
+	.
+
+# Table dbo.SUTARTIS
+map:dbo_SUTARTIS a d2rq:ClassMap;
+	d2rq:dataStorage map:database;
+	d2rq:uriPattern "dbo/SUTARTIS/@@dbo.SUTARTIS.id_DOKUMENTAS@@";
+	d2rq:class vocab:Sutartis;
+	.
+map:dbo_SUTARTIS__label a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_SUTARTIS;
+	d2rq:property rdfs:label;
+	d2rq:pattern "SUTARTIS #@@dbo.SUTARTIS.id_DOKUMENTAS@@";
+	.
+map:dbo_SUTARTIS_pasirasymo_data a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_SUTARTIS;
+	d2rq:property vocab:turi_pasirasymo_data;
+	d2rq:column "dbo.SUTARTIS.pasirasymo_data";
+	d2rq:datatype xsd:date;
+	.
+map:dbo_SUTARTIS_busena a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:dbo_SUTARTIS;
+	d2rq:property vocab:turi_busena;
+	d2rq:column "dbo.SUTARTIS.busena";
+	.
+

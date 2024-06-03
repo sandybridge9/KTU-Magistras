@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2" uri="gyvuneliu_priglaudimas_schema.rdf"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1716369923384" name="http://www.semanticweb.org/pc/ontologies/2024/3/Duomenu-semantiniai-modeliai-lab-2/" uri="gyvuneliu_priglaudimas_schema.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1716369923384" name="http://www.w3.org/2002/07/owl" uri="gyvuneliu_priglaudimas_is_dump_veikiantis.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1716369923384" name="shadowed:http://www.w3.org/2002/07/owl" uri="d2rq/d2rq-0.8.1/owl_is_dump.rdf"/>
+    </group>
+</catalog>
